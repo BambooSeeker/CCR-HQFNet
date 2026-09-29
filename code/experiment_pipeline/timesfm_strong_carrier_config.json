@@ -1,0 +1,15 @@
+{
+  "model_id": "google/timesfm-2.5-200m-pytorch",
+  "max_context": 128,
+  "max_horizon": 96,
+  "context_length": 96,
+  "prediction_length": 96,
+  "target_horizon_start": 48,
+  "target_horizon_length": 48,
+  "point_quantile_index": 5,
+  "normalize_inputs": true,
+  "use_continuous_quantile_head": true,
+  "force_flip_invariance": true,
+  "infer_is_positive": false,
+  "fix_quantile_crossing": true
+}

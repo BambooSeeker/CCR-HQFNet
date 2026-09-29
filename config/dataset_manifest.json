@@ -1,0 +1,225 @@
+{
+  "plant_code": "representative_settlement_series",
+  "requested_start": "2024-05-01 00:30:00",
+  "rows": 28704,
+  "complete_days": 598,
+  "start": "2024-05-08 00:30:00",
+  "end": "2026-07-06 00:00:00",
+  "target": "price_real",
+  "feature_count": 48,
+  "features": [
+    "price_day_ahead",
+    "price_day_ahead_cong",
+    "price_day_ahead_load",
+    "load_day_ahead_pred",
+    "elec_exter_plan",
+    "elec_fix_out_plan",
+    "energy_hydro_renewable",
+    "elec_gene_total_pred",
+    "elec_day_ahead_all",
+    "price_day_ahead_cong_abs",
+    "price_day_ahead_cong_diff1",
+    "price_day_ahead_cong_diff2",
+    "price_day_ahead_cong_diff4",
+    "price_day_ahead_cong_shock",
+    "price_real_lag96",
+    "price_real_lag144",
+    "price_real_lag336",
+    "price_real_energy_lag96",
+    "price_real_energy_lag144",
+    "price_real_energy_lag336",
+    "price_real_load_lag96",
+    "price_real_load_lag144",
+    "price_real_load_lag336",
+    "load_real_lag96",
+    "load_real_lag144",
+    "load_real_lag336",
+    "elec_gene_real_all_lag96",
+    "elec_gene_real_all_lag144",
+    "elec_gene_real_all_lag336",
+    "photo_gene_total_real_lag96",
+    "photo_gene_total_real_lag144",
+    "photo_gene_total_real_lag336",
+    "elec_gene_real_wind_lag96",
+    "elec_gene_real_wind_lag144",
+    "elec_gene_real_wind_lag336",
+    "elec_gene_real_water_lag96",
+    "elec_gene_real_water_lag144",
+    "elec_gene_real_water_lag336",
+    "elec_real_all_lag96",
+    "elec_real_all_lag144",
+    "elec_real_all_lag336",
+    "price_real_safe48_mean",
+    "price_real_safe48_std",
+    "price_real_safe48_min",
+    "price_real_safe48_max",
+    "market_phase_trial_2024",
+    "market_phase_revised_2025",
+    "market_phase_formal"
+  ],
+  "congestion_features": [
+    "price_day_ahead_cong",
+    "price_day_ahead_cong_abs",
+    "price_day_ahead_cong_diff1",
+    "price_day_ahead_cong_diff2",
+    "price_day_ahead_cong_diff4",
+    "price_day_ahead_cong_shock"
+  ],
+  "forbidden_target_time_prefixes": [
+    "price_real",
+    "load_real",
+    "elec_gene_real",
+    "elec_real"
+  ],
+  "safe_realized_lags": [
+    96,
+    144,
+    336
+  ],
+  "missing_optional_forecast_columns": [],
+  "excluded_for_missingness_over_5pct": [
+    "price_day_ahead_energy",
+    "photo_gene_total_pred",
+    "wind_gene_total_pred",
+    "water_gene_total_pred",
+    "price_real_cong"
+  ],
+  "source_files": [
+    {
+      "file": "input_price_predict_202405.csv",
+      "sha256": "ba514647332cb52ff9f75e44528f53a0d3ff39953b4b20be9374606ed9a7c468",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202406.csv",
+      "sha256": "d71a8148e3f45b3cdff48f736db02ebc2ae9e4c5a3a75cc9e3640af061b3be1e",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202407.csv",
+      "sha256": "bbd8c37717cca881fe8f5ee1544e132d5f000ed1e815cd624ad281c4929d1fec",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202408.csv",
+      "sha256": "54d5b29f4c2f5c6484ed9597783ad734ec5e51cda7dd0ac158ed8f4fd51f8674",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202409.csv",
+      "sha256": "341638cb93d4b3500edf130d3aa5d26a5df4b041293784e7866718671dffe3c2",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202410.csv",
+      "sha256": "378cf90f22019d3b6407dace7ebfa3504ee047f18beb7716bd688537a929cb23",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202411.csv",
+      "sha256": "fe124b71ea75efbaa636f3a376af0c457d53c5e954e9b7600031b6aaed99cc95",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202412.csv",
+      "sha256": "dba8d3164f22a79a8e7c277ba217077796c1c4a2c3cd219cbd236043fb4d2208",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202501.csv",
+      "sha256": "640dc09f87723c6ba77fafed67078f4a2804afa2184f709d9afeeda705d3b42a",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202502.csv",
+      "sha256": "e8194db0edeaee47c3dbdbd7183b49b13e83b782b0084fdbe906010879c0137a",
+      "rows_for_plant": 1344
+    },
+    {
+      "file": "input_price_predict_202503.csv",
+      "sha256": "fb753be97854b6ece9fefd9423154a1a305dc80cfc4a56d1a94755abdf9d2242",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202504.csv",
+      "sha256": "3c42282c78648054e971955366639627edc56d65ecd0f3261c20072fad91ae29",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202505.csv",
+      "sha256": "06d0bd2015edd5aee3f74a57a45f9a0014bf87e9efdd0f82956c82380e8c9a6a",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202506.csv",
+      "sha256": "4775ec2dc20ad3658fd8fee8c5dc47aa2a3646eebf22d6e75f96aa1bd3c08c47",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202507.csv",
+      "sha256": "33eee9e3a745c5ec75949523e84758c405bb3c9b887da4af1591a5fce01fa81d",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202508.csv",
+      "sha256": "64e1ddbf70e3f0cb2e710f0482eba0cfc99f563711057a3611ccb2ec55568077",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202509.csv",
+      "sha256": "6b1962f2ad495f0b661f632f334642243d117fd54af9509a287a069f1ba31c27",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202510.csv",
+      "sha256": "5e7df23fa99e863cddaab025c46e141a8ec0a9e3dc5e93a7ed357a8c0b9a814a",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202511.csv",
+      "sha256": "56c50ef422df42c41909e4cabb759e9d3ad6bb0de43bbd92aafbb576cbe82557",
+      "rows_for_plant": 1152
+    },
+    {
+      "file": "input_price_predict_202512.csv",
+      "sha256": "8319581c9c98a6341a0cd63d9588a0d99c21984f82a5d7dd8f00db831bae5d93",
+      "rows_for_plant": 0
+    },
+    {
+      "file": "input_price_predict_202601.csv",
+      "sha256": "0f817b7904d822cd46739a39ad9e9a026fed100dea73046ad71077c86d4e13d4",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202602.csv",
+      "sha256": "0a90da4b2848ec4e57fb4ae8bc12b11c41b45887d45d89957ca193b1872624bc",
+      "rows_for_plant": 1344
+    },
+    {
+      "file": "input_price_predict_202603.csv",
+      "sha256": "a075cbdc65775e2d65e0163770a986021018a83706e95d8ca44507ea4d9d307f",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202604.csv",
+      "sha256": "f6d99c5c6cbfa9468f26b16088b37b7027681cce63a88bf4142a4d35ebe2c42f",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202605.csv",
+      "sha256": "d141cc65c42e5c8e13542014cbc78fd5560314a501b1cacf63e5c0cdd36cce1a",
+      "rows_for_plant": 1488
+    },
+    {
+      "file": "input_price_predict_202606.csv",
+      "sha256": "315a9c5670fe824cd0d9294fab00284e28c0f306f4d655e9f92e9c6cdbfe7e81",
+      "rows_for_plant": 1440
+    },
+    {
+      "file": "input_price_predict_202607.csv",
+      "sha256": "83f97538712c476452dcd1efb77d6b57cd685e499fe61eec02f7062147376239",
+      "rows_for_plant": 432
+    }
+  ],
+  "output_sha256": "ef1bd68657c91d4f6abf20fe9b9f5349aaa09d33b49a224f2f6ff689f5dd2230"
+}

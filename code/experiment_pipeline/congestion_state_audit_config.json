@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "plant_code": "REPRESENTATIVE_SERIES",
+  "state_deadband": 0.01,
+  "min_labeled_test_points": 48,
+  "lightgbm": {
+    "n_estimators": 500,
+    "learning_rate": 0.03,
+    "num_leaves": 31,
+    "max_depth": 6,
+    "min_child_samples": 30,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_lambda": 1.0,
+    "verbosity": -1
+  }
+}

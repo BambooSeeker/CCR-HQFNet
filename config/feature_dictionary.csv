@@ -1,0 +1,59 @@
+feature,group,definition,availability,model_role
+price_day_ahead,Day-ahead market,Released day-ahead LMP,Target day,Carrier/supply-price pathway
+price_day_ahead_cong,Congestion,Released day-ahead congestion component,Target day,Congestion pathway
+price_day_ahead_load,Day-ahead market,Released day-ahead loss component,Target day,Carrier/supply-price pathway
+load_day_ahead_pred,Supply-demand,Day-ahead load forecast,Target day,Carrier/supply-price pathway
+elec_exter_plan,Supply-demand,Scheduled external electricity,Target day,Carrier/supply-price pathway
+elec_fix_out_plan,Supply-demand,Scheduled fixed output,Target day,Carrier/supply-price pathway
+energy_hydro_renewable,Supply-demand,Released hydro and renewable schedule,Target day,Carrier/supply-price pathway
+elec_gene_total_pred,Supply-demand,Forecast total generation,Target day,Carrier/supply-price pathway
+elec_day_ahead_all,Supply-demand,Day-ahead cleared electricity,Target day,Carrier/supply-price pathway
+price_day_ahead_cong_abs,Congestion,Absolute day-ahead congestion component,Target day,Congestion pathway
+price_day_ahead_cong_diff1,Congestion,One-interval difference in day-ahead congestion,Target day,Congestion pathway
+price_day_ahead_cong_diff2,Congestion,Two-interval difference in day-ahead congestion,Target day,Congestion pathway
+price_day_ahead_cong_diff4,Congestion,Four-interval difference in day-ahead congestion,Target day,Congestion pathway
+price_day_ahead_cong_shock,Congestion,Absolute first difference in day-ahead congestion,Target day,Congestion pathway
+price_real_lag96,Lagged realized,Real-time LMP lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+price_real_lag144,Lagged realized,Real-time LMP lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+price_real_lag336,Lagged realized,Real-time LMP lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+price_real_energy_lag96,Lagged realized,Real-time non-congestion price proxy lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+price_real_energy_lag144,Lagged realized,Real-time non-congestion price proxy lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+price_real_energy_lag336,Lagged realized,Real-time non-congestion price proxy lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+price_real_load_lag96,Lagged realized,Real-time loss component lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+price_real_load_lag144,Lagged realized,Real-time loss component lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+price_real_load_lag336,Lagged realized,Real-time loss component lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+load_real_lag96,Lagged realized,Realized load lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+load_real_lag144,Lagged realized,Realized load lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+load_real_lag336,Lagged realized,Realized load lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+elec_gene_real_all_lag96,Lagged realized,Realized total generation lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+elec_gene_real_all_lag144,Lagged realized,Realized total generation lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+elec_gene_real_all_lag336,Lagged realized,Realized total generation lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+photo_gene_total_real_lag96,Lagged realized,Realized photovoltaic generation lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+photo_gene_total_real_lag144,Lagged realized,Realized photovoltaic generation lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+photo_gene_total_real_lag336,Lagged realized,Realized photovoltaic generation lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+elec_gene_real_wind_lag96,Lagged realized,Realized wind generation lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+elec_gene_real_wind_lag144,Lagged realized,Realized wind generation lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+elec_gene_real_wind_lag336,Lagged realized,Realized wind generation lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+elec_gene_real_water_lag96,Lagged realized,Realized hydro generation lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+elec_gene_real_water_lag144,Lagged realized,Realized hydro generation lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+elec_gene_real_water_lag336,Lagged realized,Realized hydro generation lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+elec_real_all_lag96,Lagged realized,Realized electricity quantity lagged by 96 half-hour intervals,Lag 96,Carrier/supply-price pathway
+elec_real_all_lag144,Lagged realized,Realized electricity quantity lagged by 144 half-hour intervals,Lag 144,Carrier/supply-price pathway
+elec_real_all_lag336,Lagged realized,Realized electricity quantity lagged by 336 half-hour intervals,Lag 336,Carrier/supply-price pathway
+price_real_safe48_mean,Price history,Mean of the most recent fully observable 48-interval block,Before forecast origin,Carrier/supply-price pathway
+price_real_safe48_std,Price history,Standard deviation of the most recent fully observable 48-interval block,Before forecast origin,Carrier/supply-price pathway
+price_real_safe48_min,Price history,Minimum of the most recent fully observable 48-interval block,Before forecast origin,Carrier/supply-price pathway
+price_real_safe48_max,Price history,Maximum of the most recent fully observable 48-interval block,Before forecast origin,Carrier/supply-price pathway
+market_phase_trial_2024,Market stage,Indicator for the 2024 trial stage,Calendar known,Carrier/supply-price pathway
+market_phase_revised_2025,Market stage,Indicator for the revised continuous-settlement stage,Calendar known,Carrier/supply-price pathway
+market_phase_formal,Market stage,Indicator for formal operation,Calendar known,Carrier/supply-price pathway
+slot_sin,Calendar,Sine encoding of the half-hour slot,Calendar known,All trainable pathways
+slot_cos,Calendar,Cosine encoding of the half-hour slot,Calendar known,All trainable pathways
+slot_norm,Calendar,Normalized half-hour slot index,Calendar known,All trainable pathways
+price_day_ahead_energy_proxy,Derived market,Day-ahead LMP less its released congestion component,Target day,Carrier/supply-price pathway
+market_bid_space_proxy,Derived market,Forecast load less fixed output and external schedule,Target day,Carrier/supply-price pathway
+supply_adequacy_proxy,Derived market,Forecast generation relative to forecast load,Target day,Carrier/supply-price pathway
+external_plan_load_ratio,Derived market,External schedule divided by forecast load,Target day,Carrier/supply-price pathway
+fixed_output_load_ratio,Derived market,Fixed output divided by forecast load,Target day,Carrier/supply-price pathway
+generation_load_ratio,Derived market,Forecast generation divided by forecast load,Target day,Carrier/supply-price pathway
+renewable_supply_index,Derived market,Hydro-renewable schedule relative to forecast generation,Target day,Carrier/supply-price pathway

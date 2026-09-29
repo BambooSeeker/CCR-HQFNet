@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or demonstration package, please cite the associated manuscript."
+title: "CCR-HQFNet: Reproducibility materials for real-time electricity price forecasting"
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Jiawei
+  - family-names: Hou
+    given-names: Peng
+    email: houpeng2026@tju.edu.cn
+  - family-names: Jinrongsen
+  - family-names: Liu
+    given-names: Zeyu
+  - family-names: Zhou
+    given-names: Yue
+  - family-names: Zhang
+    given-names: Pei
+    email: peizhang@tju.edu.cn
+version: 1.0.0
+date-released: 2026-09-29
+license: MIT
+preferred-citation:
+  type: manuscript
+  title: "Real-Time Electricity Price Forecasting with Time-Series Foundation-Model Adaptation and Supply-Price and Congestion Routing: A Zhejiang Case Study"
+  authors:
+    - family-names: Zhu
+      given-names: Jiawei
+    - family-names: Hou
+      given-names: Peng
+    - family-names: Jinrongsen
+    - family-names: Liu
+      given-names: Zeyu
+    - family-names: Zhou
+      given-names: Yue
+    - family-names: Zhang
+      given-names: Pei
+  year: 2026
+  notes: "Manuscript submitted to Applied Energy; bibliographic details will be updated after editorial disposition."

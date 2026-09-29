@@ -1,0 +1,3 @@
+Python 3.12.3
+CUDA build used for reviewer reruns: PyTorch 2.11.0+cu128
+The metric-only demo requires only Python, NumPy, and pandas.

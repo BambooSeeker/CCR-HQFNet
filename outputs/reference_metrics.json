@@ -1,0 +1,13 @@
+{
+  "n": 672,
+  "mape_n": 653,
+  "negative_n": 64,
+  "predicted_negative_n": 59,
+  "mae": 34.67387633016999,
+  "rmse": 72.66215012836516,
+  "mape_pct": 15.969958244541926,
+  "negative_mae": 110.95389409598579,
+  "negative_recall_pct": 76.5625,
+  "negative_precision_pct": 83.05084745762711,
+  "false_positives": 10
+}
