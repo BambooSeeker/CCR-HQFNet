@@ -8,7 +8,7 @@ in Table 9 and provides a reproducible comparison on identical target intervals.
 
 ## Run
 
-Use Python 3.12 in a separate environment. A GPU is not required for this entry point.
+Use Python 3.12 on Windows in a separate environment. A GPU is not required for this entry point.
 
 ```bash
 python -m pip install -r environment/requirements-routing.txt
@@ -20,6 +20,13 @@ all 4,032 generated pathway predictions against the reference, using an absolute
 tolerance of 1e-8 CNY/MWh. Outputs include predictions, daily policy selections,
 metrics, software versions and a verification report. The complete-model MAE is
 34.67387633016999 CNY/MWh.
+
+Exact refitting was verified on Windows. An Ubuntu run completed fitting but
+produced a maximum single-prediction difference of 1.248382 CNY/MWh, exceeding
+the strict comparison tolerance. The Windows workflow checks the reference
+platform. Other platforms retain the same comparison and write their difference
+report before raising a mismatch; numerical identity across platforms is not
+assumed. The archived-prediction metric check is available through `run_demo.py`.
 
 ## Data scope
 
