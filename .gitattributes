@@ -1,3 +1,4 @@
+* text=auto eol=lf
 demo_data/march_training/* text eol=lf
 run_march_training.py text eol=lf
 docs/MARCH_TRAINING.md text eol=lf
