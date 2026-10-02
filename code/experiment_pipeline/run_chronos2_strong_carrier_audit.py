@@ -8,8 +8,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import torch
-from chronos import Chronos2Pipeline
 from lightgbm import LGBMRegressor, early_stopping, log_evaluation
 from scipy.stats import wilcoxon
 
@@ -89,6 +87,9 @@ def chronos_predictions(frame: pd.DataFrame, config: dict, cache_path: Path) -> 
             return cached
         raise ValueError("Chronos cache timestamps do not match locked data")
 
+    import torch
+    from chronos import Chronos2Pipeline
+
     context, targets = build_context(frame)
     dtype = torch.bfloat16 if config["dtype"] == "bfloat16" else torch.float32
     pipeline = Chronos2Pipeline.from_pretrained(
@@ -160,6 +161,8 @@ def comparison(metrics: pd.DataFrame, daily: pd.DataFrame, candidate: str, basel
 
 
 def main() -> None:
+    import torch
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--labels", type=Path, required=True)

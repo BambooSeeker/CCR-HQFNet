@@ -1,0 +1,5 @@
+demo_data/march_training/* text eol=lf
+run_march_training.py text eol=lf
+docs/MARCH_TRAINING.md text eol=lf
+environment/requirements-routing.txt text eol=lf
+.github/workflows/verify-march-training.yml text eol=lf

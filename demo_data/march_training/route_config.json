@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "lightgbm": {
+    "n_estimators": 1200,
+    "learning_rate": 0.025,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_child_samples": 30,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.05,
+    "reg_lambda": 0.1,
+    "verbosity": -1
+  }
+}

@@ -1,0 +1,25 @@
+name: Verify March pathway training
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'run_march_training.py'
+      - 'demo_data/march_training/**'
+      - 'code/experiment_pipeline/**'
+      - 'environment/requirements-routing.txt'
+      - '.github/workflows/verify-march-training.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r environment/requirements-routing.txt
+      - run: python run_march_training.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: march-training-verification
+          path: outputs/march_training/verification.json

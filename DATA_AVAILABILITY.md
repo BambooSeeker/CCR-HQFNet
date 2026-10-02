@@ -24,8 +24,19 @@ public download or API access is available.
 | `march_2026_reference_predictions.csv` | 672 | Complete-model predictions used by the metric verification |
 
 The files permit inspection of the schema and exact reproduction of the
-released March test-period metrics. They do not reproduce the confidential
-training and validation records or the complete four-season experiment.
+released March test-period metrics.
+
+The `demo_data/march_training/` directory additionally provides 4,320 training
+rows from the exact 90-day list, 336 validation rows for 8-14 February 2026,
+and 672 test rows for 1-14 March 2026. It includes the required predictors,
+training labels, fixed carrier outputs, settings and all six pathway references.
+Training-day bounds extend from 28 August 2025 to 7 February 2026; only the dates
+listed in `fold.json` are included. Historical values within lagged predictors
+remain part of these inputs. The complete industrial registry is not released.
+
+`run_march_training.py` refits the downstream routing components with the fixed
+carrier outputs and verifies their March forecasts. It does not repeat LoRA
+adaptation. See [the demonstration specification](docs/MARCH_TRAINING.md).
 
 The demonstration files are provided for non-commercial scholarly verification
 of the associated manuscript. Redistribution or use outside that purpose may

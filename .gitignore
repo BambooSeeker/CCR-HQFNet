@@ -23,3 +23,5 @@ input_price_predict_*.csv
 demo_data/*
 !demo_data/march_2026_test_features.csv
 !demo_data/march_2026_reference_predictions.csv
+!demo_data/march_training/
+outputs/march_training/

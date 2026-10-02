@@ -18,6 +18,8 @@ This repository contains:
 - a representative Chronos-2 LoRA adapter;
 - permitted half-hourly demonstration data for 1-14 March 2026 (672 targets);
 - frozen complete-model predictions and reference metrics for that period.
+- the exact 90-day training and seven-day validation records required to
+  refit the March routing components, with fixed Chronos-2 outputs.
 
 The March release supports direct verification of the reported test-period
 metrics and documents the input/output schema. It is not a substitute for the
@@ -64,7 +66,21 @@ PASS: March 2026 test-period metrics match the released reference.
 This command verifies the released test-period result; it does not retrain the
 foundation model.
 
-## Full pipeline with authorized data
+## March pathway training
+
+```bash
+python -m pip install -r environment/requirements-routing.txt
+python run_march_training.py
+```
+
+This CPU-compatible entry point refits the routing components and selects the
+daily acceptance policies using the released fitting data. It generates all six
+March pathway forecasts and checks them against the archived predictions.
+Chronos-2 outputs are supplied as a fixed input to this demonstration.
+The exact release boundaries, method settings and verification scope are
+documented in [March training and verification](docs/MARCH_TRAINING.md).
+
+## Full study training with authorized data
 
 1. Obtain the authorized source records described in
    [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md).
