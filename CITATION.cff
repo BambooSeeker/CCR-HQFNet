@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or demonstration package, please cite the associated manuscript."
+message: "If you use this software or research archive, please cite the associated manuscript."
 title: "CCR-HQFNet: Reproducibility materials for real-time electricity price forecasting"
 type: software
 authors:
@@ -16,12 +16,12 @@ authors:
   - family-names: Zhang
     given-names: Pei
     email: peizhang@tju.edu.cn
-version: 1.0.0
-date-released: 2026-09-29
+version: 2.0.0
+date-released: 2026-10-24
 license: MIT
 preferred-citation:
   type: manuscript
-  title: "Real-Time Electricity Price Forecasting with Time-Series Foundation-Model Adaptation and Supply-Price and Congestion Routing: A Zhejiang Case Study"
+  title: "Supply-price and congestion routing for time-series foundation models in real-time electricity price forecasting: Evidence from Zhejiang"
   authors:
     - family-names: Zhu
       given-names: Jiawei

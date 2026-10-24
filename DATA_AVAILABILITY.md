@@ -1,65 +1,29 @@
 # Data availability and provenance
 
-## Full study registry
+The authors have expanded the release for the second revision to include the
+research data used for fitting, validation and evaluation, together with
+configurations, fitted artifacts and saved predictions. The research records
+were supplied through a collaboration with Zhejiang Energy Group. The author
+has authorized publication of the research inputs included in this release.
 
-The full market records used in the study were supplied directly by Zhejiang
-Energy Group as Excel files under a research cooperation agreement. They cover
-the price, schedule, load, generation, renewable, and congestion-related fields
-needed to construct the rolling-origin experiments. The agreement does not
-permit redistribution of the complete records.
+Download the research archive from the
+[v2.0.0 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0).
+The archive contains processed study inputs, historical inputs needed to
+construct lagged predictors, chronological fold definitions, model artifacts
+and experiment outputs. Unrelated operational records and access credentials
+are excluded. The March example remains in `demo_data/` for a small local check.
 
-Eligible organizations may enquire about access through the Zhejiang
-Electricity Power Exchange Platform at <https://www.zjpx.com.cn/>. Registration,
-eligibility, data scope, and authorization are determined by the platform and
-the relevant data provider. This repository does not imply that unrestricted
-public download or API access is available.
+The released data are supplied for scholarly examination and reproduction of
+the associated study. They do not confer rights to other records held by the
+data provider. The software license and third-party model licenses retain
+their separate scopes.
 
-## Released demonstration data
+The reproduction guide identifies the final primary predictions and the
+separate stress and mechanism evaluations. Original archive identifiers are
+retained to connect saved models, inputs and outputs. Filenames containing
+`LOCAL_ONLY` reflect their original local provenance; files included in this
+release are authorized research artifacts.
 
-`demo_data/` contains a permitted subset for 1-14 March 2026:
-
-| File | Rows | Purpose |
-| --- | ---: | --- |
-| `march_2026_test_features.csv` | 672 | Documents the released half-hourly model-input and target schema |
-| `march_2026_reference_predictions.csv` | 672 | Complete-model predictions used by the metric verification |
-
-The files permit inspection of the schema and exact reproduction of the
-released March test-period metrics.
-
-The `demo_data/march_training/` directory additionally provides 4,320 training
-rows from the exact 90-day list, 336 validation rows for 8-14 February 2026,
-and 672 test rows for 1-14 March 2026. It includes the required predictors,
-training labels, fixed carrier outputs, settings and all six pathway references.
-Training-day bounds extend from 28 August 2025 to 7 February 2026; only the dates
-listed in `fold.json` are included. Historical values within lagged predictors
-remain part of these inputs. The complete industrial registry is not released.
-
-`run_march_training.py` refits the downstream routing components with the fixed
-carrier outputs and verifies their March forecasts. It does not repeat LoRA
-adaptation. See [the demonstration specification](docs/MARCH_TRAINING.md).
-
-The demonstration files are provided for non-commercial scholarly verification
-of the associated manuscript. Redistribution or use outside that purpose may
-require permission from the corresponding author and the original data
-provider. The files must not be used to identify or infer confidential market
-participants or operational records.
-
-## Reproduction with authorized records
-
-Researchers holding authorized records can use
-`code/experiment_pipeline/prepare_authorized_dataset.py`,
-`config/feature_dictionary.csv`, and the released fold registries to construct
-the analysis inputs. The source-file hashes in `config/dataset_manifest.json`
-identify the version used by the authors without redistributing the records.
-
-Questions concerning scientific reproduction may be directed to Peng Hou at
-`houpeng2026@tju.edu.cn`.
-
-## Revision-2 audit package
-
-The revision-2 release records the final manuscript and response-document
-fingerprints in `config/revision_release_manifest.json`. The directory
-`outputs/final_revision_audit/` contains the saved, publication-facing audit
-summaries for the probability, reliability, capacity-matching, calibration-day
-deletion and held-out action-risk analyses. The files are derived from the
-archived study outputs and contain no additional source-registry records.
+The repository manifest records the final manuscript's identity. Archive and
+file checksums allow readers to verify downloaded contents. Scientific
+enquiries may be directed to Peng Hou at `houpeng2026@tju.edu.cn`.

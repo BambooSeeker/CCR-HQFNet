@@ -7,63 +7,71 @@
   "manuscript_sha256": "2a0745753daa8c67cfe705e6b1779f1d2e8f83fd404f7e50b1dc28489d90170e",
   "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d",
   "scope": {
-    "code_and_configurations": "complete public release",
-    "saved_predictions_and_audit_outputs": "complete public release for the reported revision checks",
-    "raw_market_registry": "access-controlled source records supplied under research cooperation agreement"
+    "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
+    "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
+    "verification": "Primary fitted-model replay, probability recalculation and March downstream refit passed"
   },
   "public_audit_outputs": [
     {
       "path": "outputs/final_revision_audit/current_heldout_action_risk.csv",
-      "sha256": "2d2b1e6a01d22bbad13fe8188fd036bfbba09433984f95b89f3bced1a1a31027"
+      "sha256": "1857b66afefdd0e977d65e4790c44ccb8c6efa8b0af754ed03b8ace424677fd5"
     },
     {
       "path": "outputs/final_revision_audit/archived_stress_action_risk.csv",
-      "sha256": "fc003c4bcd9746327afca86220f22d76b8906390aebb5f44f4d063ce39967de6"
+      "sha256": "7f5536aea6b1006a33acdbe94257ee49508396b031a37c7a502d90e0eb870de2"
     },
     {
       "path": "outputs/final_revision_audit/archived_action_risk_block_intervals.csv",
-      "sha256": "a1058932b0599a818fc6aba80d8962b1b60cd0f513e7be13021793e1db9034ce"
+      "sha256": "6c7701e85e42c67b9df06819db2a5513258b45265efc98797f82302203a70f41"
     },
     {
       "path": "outputs/final_revision_audit/calibration_day_deletion.csv",
-      "sha256": "f299c0c5ce797cb4caf8def0930b6dbcf2ec37046a4131c15194fed2a395ece6"
+      "sha256": "fb9557daba93fa9ad2fb8968552ed8e9876a5334edce90abe96f60179f2043c1"
     },
     {
       "path": "outputs/final_revision_audit/calibration_test_chronology.csv",
-      "sha256": "3d180a8e6ad7671a3cee4f66ada70354a748ee853ea78a8e807164b1e404a411"
+      "sha256": "b893be209f3da5c7eafbfda4a3ee017b3e219db3ff05adb1c4bb158bfff06cd7"
     },
     {
       "path": "outputs/final_revision_audit/consistent_probability_tables.csv",
-      "sha256": "ca68a08a3f81784aef847c4fb10fe61ec4d1b18f8d06f33007c271dd26e36ae4"
+      "sha256": "d812cb59ece2e7bfa3873c7b0c8b2975297508c345868a415102b53e2e7ac6c7"
     },
     {
       "path": "outputs/final_revision_audit/consistent_quantile_reliability.csv",
-      "sha256": "1048292b4bf7cbc0223ade7af6aa390cc091752cd2d6919e4c4e652356fa2751"
+      "sha256": "d8572edbd008d7e2abcb92346d0b8617e2836ccbb225bb72f8c8cafc24e9bbfc"
     },
     {
       "path": "outputs/final_revision_audit/CQR_before_after_metrics.csv",
-      "sha256": "b63373a8570579ea1c2844d76ad8dd38103c80b843b91dfed1dfbe4a9f69fa4a"
+      "sha256": "6f1e02e5dc8b0dde51623f25ac21e3dd8c03025417612ea688ff176b251494af"
     },
     {
       "path": "outputs/final_revision_audit/matched_capacity_comparison.csv",
-      "sha256": "4ba9dd325abd7bae1915bd5d2c29e8a0a47949463427e28ec79c84528a467c93"
+      "sha256": "a52641dbaaf1b6d47d21144a412d86d1f2b7f9a47c64934fec5494c3a5c006b2"
     },
     {
       "path": "outputs/final_revision_audit/matched_capacity_validation_selection.csv",
-      "sha256": "16d4bb9cdf45d2d8fdccc4c72757037d2cf8c737f8223ac785193a112beb830c"
+      "sha256": "b566863e0f95ea4d2d58b61046d90d5fad23f83c0df2669158408aad7a76b37b"
     },
     {
       "path": "outputs/final_revision_audit/controller_diagnostic_summary.json",
-      "sha256": "b1ffd968ba6562471ebaf0d9dfadb6bbdeb6d9a22db6984d7dd3da943c747299"
+      "sha256": "98d298387956d5c5839326f3c53a98a19e704f8c1f1c184a994febc7406cfda7"
     },
     {
       "path": "outputs/final_revision_audit/stress_source_scope.json",
-      "sha256": "fa75435a82a628c90bce7eb525c578a639d0eecdacb8cfa7afd2afc18b974aaa"
+      "sha256": "63c3968693f5bb6bc0a1a50de0b8910d959f90f5bb5830fc12021aeedb27856e"
     },
     {
       "path": "outputs/final_revision_audit/delivery_checks.json",
-      "sha256": "a93e8ef884701a61eaee17cc35533f556158436ab511bf46fbfc46a3e2866908"
+      "sha256": "ca416d015768ddb47de6d1d69bacf9660ada7c3d5e13638b2a7d8c6ecc0f044d"
     }
   ],
-  "reproduction_note": "The public package contains the executable code, fixed configurations, released inputs, saved predictions and audit outputs needed to inspect the revised analyses. The restricted source registry is not redistributed; authorized researchers can prepare it using the released schema."
+  "reproduction_note": "Download the versioned research archive and follow docs/REVISION_REPRODUCTION.md. Source identifiers retain provenance; current primary predictions are identified explicitly.",
+  "version": "2.0.0",
+  "release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0",
+  "archive": {
+    "name": "CCR-HQFNet-v2.0.0-research.zip",
+    "sha256": "645b9ad3f6bc20dff0bf48f514fb71495b0bea27bf2a65ffb646afdc19101822",
+    "bytes": 1203147448,
+    "files": 1793
+  }
 }

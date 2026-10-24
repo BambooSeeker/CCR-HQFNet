@@ -1,0 +1,30 @@
+{
+  "purpose": "test matched-residual settings selected on final controlled validation output",
+  "chronos": "reuse identical archived fold caches; zero adaptation steps",
+  "training_days": 90,
+  "validation_days": 7,
+  "primary_test_targets": 6048,
+  "residual_references": [
+    "archived fold-specific energy/Chronos mixture",
+    "pure Chronos median"
+  ],
+  "tree_settings": [
+    "archived selected loss/leaves/half-life",
+    "L1/15 leaves/14-day half-life; if duplicate, L2/7 leaves/no weighting"
+  ],
+  "residual_shrinkage": [
+    0.5,
+    1.0
+  ],
+  "full_residual_stopping": "validation MAE after calibrated congestion mixture; max1600 trees, patience60",
+  "blind_residual_stopping": "validation residual MAE; max1600 trees, patience60",
+  "candidate_selection": "mean MAE of final controlled validation output, with strictly earlier-day policy calibration",
+  "simple_baseline": "Chronos median plus ordinary full-information LightGBM residual, independently selected from the same two tree settings; native residual MAE stopping, no shrinkage, no router",
+  "supply_baseline": "independently select reference, paired tree setting and shrinkage with gamma=0 using the same controlled validation objective",
+  "calibration": "reuse archived class probabilities and selected mapping methods; refit matched residuals inside the three chronological downstream OOF blocks",
+  "scope": "downstream OOF conditional on frozen outer-fold Chronos; no new full upstream cross-fitting claim",
+  "selection_freeze": "all fold configurations frozen before candidate test inference",
+  "test_interpretation": "previously inspected seasonal development registry; independent confirmation requires previously unused later data",
+  "source_sha256": "65d4ee373d7aa964c138c9c7f8454cfabc9c6b687286aab5da112e47d018c5de",
+  "protected_manuscript_sha256": "c80e08b93ee3fc5c274878a746cd193da9255b068484acb29c79dd3157fd061e"
+}

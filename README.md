@@ -1,144 +1,88 @@
 # CCR-HQFNet
 
-Reproducibility materials for **Real-Time Electricity Price Forecasting with
-Time-Series Foundation-Model Adaptation and Supply-Price and Congestion Routing:
-A Zhejiang Case Study**, submitted to *Applied Energy*.
+Research materials for **Supply-price and congestion routing for time-series
+foundation models in real-time electricity price forecasting: Evidence from
+Zhejiang**, submitted to *Applied Energy*.
 
-CCR-HQFNet adapts probabilistic trajectories from Chronos-2 to the Zhejiang
-real-time electricity market through separately estimated supply-price and
-congestion pathways and validation-calibrated control of negative-tail
+CCR-HQFNet combines adapted Chronos-2 forecasts, supply-price and congestion
+pathways, and validation-calibrated selective control of negative-price
 corrections.
 
-## Release scope
+## Second-revision research archive
 
-This repository contains:
+The [v2.0.0 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0)
+provides research inputs, chronological split definitions, fitted model
+artifacts, source code, configurations and prediction outputs for the revised
+analyses. Download `CCR-HQFNet-v2.0.0-research.zip` from the release and extract
+it to a short local path. The extracted directory is named `research_archive`.
+The release checksums identify the exact files supplied.
 
-- the experiment, baseline, routing, ablation, inference, and evaluation code;
-- frozen feature definitions, fold registries, and training/search settings;
-- a representative Chronos-2 LoRA adapter;
-- permitted half-hourly demonstration data for 1-14 March 2026 (672 targets);
-- frozen complete-model predictions and reference metrics for that period.
-- the exact 90-day training and seven-day validation records required to
-  refit the March routing components, with fixed Chronos-2 outputs.
+The archive includes the 6,048-observation primary evaluation, matched component
+comparisons, the five-window stress evaluation, probability forecasts,
+controller diagnostics, repeated baseline fits and context-length sensitivity
+outputs. Its numerical registries are documented in
+[the reproduction guide](docs/REVISION_REPRODUCTION.md). The earlier March
+example remains available as a small entry point.
 
-The revision-2 release also includes the reproducibility manifest in
-`config/revision_release_manifest.json` and the public audit outputs used to
-check the revised manuscript in `outputs/final_revision_audit/`. These files
-cover the probability, reliability, capacity-matching, calibration-deletion
-and held-out action-risk checks reported in the second-round revision.
+## Verify the revised results
 
-The released March inputs and archived outputs support direct verification of
-the March test-period metrics and document the input/output schema. The
-four-season source registry remains access-controlled under the data-provider
-agreement; authorized researchers can reproduce those experiments by preparing
-the registry with the released schema and fold definitions.
-
-## Repository layout
-
-```text
-checkpoint/                 Representative Chronos-2 LoRA adapter
-code/baselines/             Statistical, machine-learning, and deep baselines
-code/experiment_pipeline/   Data, routing, ablation, inference, and evaluation
-config/                     Feature dictionary, folds, and frozen settings
-demo_data/                  Permitted March 2026 data and reference predictions
-environment/                Pinned Python environments and runtime information
-outputs/                    Reference metrics verified by run_demo.py
-run_demo.py                 Metric-only reproducibility check
-```
-
-## Quick verification
-
-Python 3.12 is recommended.
-
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/macOS: source .venv/bin/activate
-python -m pip install -r environment/requirements-demo.txt
-python run_demo.py
-```
-
-The check reads the released predictions, recomputes all metrics, and compares
-them with `outputs/reference_metrics.json`. Expected complete-model results are
-MAE 34.674 CNY/MWh, RMSE 72.662 CNY/MWh, and MAPE 15.970% on the 653 observations
-with an absolute realized price of at least 50 CNY/MWh. It also verifies the
-negative-price count, recall, precision, and false-positive count. A successful
-run ends with:
-
-```text
-PASS: March 2026 test-period metrics match the released reference.
-```
-
-This command verifies the released test-period result; it does not retrain the
-foundation model.
-
-## March pathway training
+Python 3.12 is recommended. From a checkout of this repository:
 
 ```bash
 python -m pip install -r environment/requirements-routing.txt
+python -m pip install matplotlib python-docx joblib
+python reproduce_revision.py --archive /path/to/research_archive --mode verify
+```
+
+This recomputes primary component errors, probability metrics, quantile
+reliability and action-risk intervals from the released predictions. The full
+primary model has MAE 59.55745867 CNY/MWh on 6,048 targets. The command checks
+the equality of point predictions and forecast medians, and the relationship
+between MAE, interval score and WIS.
+
+```bash
+python reproduce_revision.py --archive /path/to/research_archive --mode replay
+```
+
+Replay loads the fitted downstream models and reconstructs all primary
+pathways using the archived Chronos outputs. It compares the reconstructed
+predictions with the released reference before repeating the metric checks.
+
+```bash
+python reproduce_revision.py --archive /path/to/research_archive --mode train-downstream --output outputs/refit
+```
+
+This refits and selects downstream residual models using the released
+chronological fitting inputs. `--limit 1` restricts the run to the first fold.
+Foundation-model adaptation and the other experiment entry points are
+documented in the reproduction guide. Stochastic refitting can vary with
+software and hardware; saved predictions and fitted artifacts provide the
+numerical reference for the manuscript.
+
+## March example
+
+```bash
+python run_demo.py
 python run_march_training.py
 ```
 
-This CPU-compatible entry point refits the routing components and selects the
-daily acceptance policies using the released fitting data. It generates all six
-March pathway forecasts and checks them against the archived predictions.
-Chronos-2 outputs are supplied as a fixed input to this demonstration.
-The exact release boundaries, method settings and verification scope are
-documented in [March training and verification](docs/MARCH_TRAINING.md).
+The March example contains 672 targets for 1-14 March 2026. Its full-model MAE
+is 34.67387633 CNY/MWh. `run_march_training.py` refits six pathways using the
+released 90-day training and seven-day validation records, conditional on
+archived Chronos outputs. See [March training](docs/MARCH_TRAINING.md).
 
-## Full study training with authorized data
+## Files and citation
 
-1. Obtain the authorized source records described in
-   [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md).
-2. Create the analysis dataset using
-   `code/experiment_pipeline/prepare_authorized_dataset.py` and the schema in
-   `config/feature_dictionary.csv`.
-3. Use `config/four_season_fold_registry.json` for the reported rolling-origin
-   splits and `config/training_and_search_settings.json` for fixed settings.
-4. Install the full environment from `environment/requirements.txt` and run the
-   relevant carrier, route, ablation, baseline, and evaluation scripts under
-   `code/`.
+- `reproduce_revision.py`: verification, fitted-model replay and downstream fitting.
+- `config/revision_release_manifest.json`: manuscript identity and artifact scope.
+- `config/four_season_fold_registry.json`: primary chronological folds.
+- `outputs/final_revision_audit/`: machine-readable revision checks.
+- `code/`: baseline and forecasting implementation sources.
+- `environment/`: dependency specifications.
+- `SHA256SUMS.txt`: checksums of repository files as distributed by Git.
 
-The complete experiments require a CUDA-capable environment and access to the
-Chronos-2 and TimesFM base models. Runtime details are recorded in
-`environment/runtime.txt`.
-
-## Data access
-
-The full Excel records were supplied directly by Zhejiang Energy Group under a
-research cooperation agreement and cannot be redistributed. The Zhejiang
-Electricity Power Exchange Platform is available at
-<https://www.zjpx.com.cn/>. Eligibility and access are determined by the
-platform's registration and authorization procedures. See
-[`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md) for the precise boundary between
-the public demonstration files and the restricted source registry.
-
-## Integrity
-
-`SHA256SUMS.txt` records SHA-256 checksums for the released research artifacts.
-From PowerShell, they can be checked with:
-
-```powershell
-Get-Content SHA256SUMS.txt | ForEach-Object {
-  $hash, $path = $_ -split '  ', 2
-  if ((Get-FileHash -Algorithm SHA256 -LiteralPath $path).Hash.ToLower() -ne $hash) {
-    throw "Checksum mismatch: $path"
-  }
-}
-```
-
-## Citation
-
-Citation metadata are provided in [`CITATION.cff`](CITATION.cff). The repository
-will be updated with the final bibliographic record if the manuscript is
-accepted.
-
-## License and contact
-
-The authors' source code is released under the MIT License. Separate conditions
-apply to the demonstration data, third-party base models, and their associated
-licenses; see [`LICENSE`](LICENSE), [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md),
-and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
-
-For scientific and data-access enquiries, contact the corresponding author,
-Peng Hou (`houpeng2026@tju.edu.cn`).
+[Data availability](DATA_AVAILABILITY.md) defines the research release.
+[CITATION.cff](CITATION.cff) provides citation metadata.
+Author-written code is covered by the [MIT License](LICENSE); base-model and
+third-party conditions are described in [third-party notices](THIRD_PARTY_NOTICES.md).
+Scientific enquiries: Peng Hou, `houpeng2026@tju.edu.cn`.
