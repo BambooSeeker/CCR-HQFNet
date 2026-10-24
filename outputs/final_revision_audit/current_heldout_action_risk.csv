@@ -1,0 +1,6 @@
+scope,implementation,n,days,start,end,actions,action_days,false_actions,unweighted_action_risk,activation_mass,false_activation_mass,weighted_action_risk,nonnegative_targets,false_negative_price_predictions,false_prediction_rate,negative_targets,negative_true_positives,MAE
+Overall,current_joint_frozen,6048,126,2025-04-01,2026-01-31,1,1,0,0.0,0.576034781759521,0.0,0.0,5976,0,0.0,72,1,59.55745866961517
+autumn,current_joint_frozen,1680,35,2025-09-24,2025-10-28,0,0,0,,0.0,0.0,,1670,0,0.0,10,0,115.87357101977311
+spring,current_joint_frozen,1392,29,2025-04-01,2025-04-30,1,1,0,0.0,0.576034781759521,0.0,0.0,1333,0,0.0,59,1,59.23453650640383
+summer,current_joint_frozen,1488,31,2025-08-01,2025-08-31,0,0,0,,0.0,0.0,,1487,0,0.0,1,0,38.366165554568575
+winter,current_joint_frozen,1488,31,2026-01-01,2026-01-31,0,0,0,,0.0,0.0,,1486,0,0.0,2,0,17.46813276781021

@@ -1,0 +1,7 @@
+{
+  "implementation": "archived_r15_seed42",
+  "note": "Saved implementation differs from current downstream joint selection. Rows cannot be pooled with primary risk counts.",
+  "checked_similar_day_records": 140,
+  "entrypoint_fold_references": [],
+  "independent_future_confirmation": false
+}

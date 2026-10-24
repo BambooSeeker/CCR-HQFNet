@@ -1,0 +1,13 @@
+scope,block_days,actions,false_actions,unweighted_risk,ci_low,ci_high,weighted_ci_low,weighted_ci_high,nonempty_replicates,replicates,interpretation
+All five archived windows,3,278,97,0.3489208633093525,0.25,0.4683605454656637,0.23889665059600543,0.46939368115259944,10000,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+All five archived windows,7,278,97,0.3489208633093525,0.24262295081967214,0.4818501729691041,0.23107903305006358,0.4901754996304262,10000,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+formal_spring_2026,3,58,43,0.7413793103448276,0.5,0.8889804639804626,0.49783981594911,0.8849416404031818,9998,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+formal_spring_2026,7,58,43,0.7413793103448276,0.5,0.8571428571428571,0.4940428039646167,0.8501277066303496,10000,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+formal_winter_event_2026,3,206,50,0.24271844660194175,0.16546627359766322,0.30120481927710846,0.15259405526777742,0.30053997297280793,10000,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+formal_winter_event_2026,7,206,50,0.24271844660194175,0.13952752428613482,0.29720515970515965,0.12626218152701085,0.2944301908140238,10000,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+revised_spring_2025,3,0,0,,,,,,0,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+revised_spring_2025,7,0,0,,,,,,0,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+revised_summer_negative_2025,3,14,4,0.2857142857142857,0.0,1.0,0.0,1.0,8358,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+revised_summer_negative_2025,7,14,4,0.2857142857142857,0.0,1.0,0.0,1.0,7912,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+trial_late_summer_2024,3,0,0,,,,,,0,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.
+trial_late_summer_2024,7,0,0,,,,,,0,10000,Descriptive conditional interval for archived fitted predictions; not an adaptive-selection or population-risk guarantee.

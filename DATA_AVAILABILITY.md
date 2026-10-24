@@ -54,3 +54,12 @@ identify the version used by the authors without redistributing the records.
 
 Questions concerning scientific reproduction may be directed to Peng Hou at
 `houpeng2026@tju.edu.cn`.
+
+## Revision-2 audit package
+
+The revision-2 release records the final manuscript and response-document
+fingerprints in `config/revision_release_manifest.json`. The directory
+`outputs/final_revision_audit/` contains the saved, publication-facing audit
+summaries for the probability, reliability, capacity-matching, calibration-day
+deletion and held-out action-risk analyses. The files are derived from the
+archived study outputs and contain no additional source-registry records.

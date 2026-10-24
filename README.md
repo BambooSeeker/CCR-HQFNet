@@ -21,11 +21,17 @@ This repository contains:
 - the exact 90-day training and seven-day validation records required to
   refit the March routing components, with fixed Chronos-2 outputs.
 
-The March release supports direct verification of the reported test-period
-metrics and documents the input/output schema. It is not a substitute for the
-confidential registry used for the four-season evaluation. Reproducing those
-experiments requires authorized source records prepared with the released
-schema and fold definitions.
+The revision-2 release also includes the reproducibility manifest in
+`config/revision_release_manifest.json` and the public audit outputs used to
+check the revised manuscript in `outputs/final_revision_audit/`. These files
+cover the probability, reliability, capacity-matching, calibration-deletion
+and held-out action-risk checks reported in the second-round revision.
+
+The released March inputs and archived outputs support direct verification of
+the March test-period metrics and document the input/output schema. The
+four-season source registry remains access-controlled under the data-provider
+agreement; authorized researchers can reproduce those experiments by preparing
+the registry with the released schema and fold definitions.
 
 ## Repository layout
 

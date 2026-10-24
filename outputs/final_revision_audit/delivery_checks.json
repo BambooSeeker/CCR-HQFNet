@@ -1,0 +1,13 @@
+{
+  "report_contains_four_exact_comments": true,
+  "docx_tables": 3,
+  "repeated_header_elements": 0,
+  "formal_documents_unchanged": true,
+  "new_training_steps": 0,
+  "new_calibration_reselections": 2646,
+  "no_new_independent_future_evaluation": true,
+  "generation_scripts": [
+    "C:\\Users\\MECHREVO\\Documents\\Codex\\2026-07-03\\ban\\r2_experiment_plan_20261018\\complete_four_comment_evidence_20261023.py",
+    "C:\\Users\\MECHREVO\\Documents\\Codex\\2026-07-03\\ban\\r2_experiment_plan_20261018\\complete_matched_capacity_and_probability_20261023.py"
+  ]
+}
