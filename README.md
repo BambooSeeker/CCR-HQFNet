@@ -10,7 +10,7 @@ corrections.
 
 ## Second-revision research archive
 
-The [v2.0.1 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.1)
+The [v2.0.2 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2)
 provides the final numerical indices and portable reproduction entry points.
 It uses the complete, checksum-verified v2.0.0 research archive, containing
 research inputs, chronological split definitions, fitted model
@@ -21,7 +21,8 @@ distributes the archive in numbered parts; the script checks each part and
 the assembled ZIP against the release manifest. Extract the ZIP to a short
 local path. The extracted directory is named `research_archive`.
 The release checksums identify the exact files supplied.
-The data archive is unchanged by the v2.0.1 code and documentation update;
+The data archive and experimental predictions are unchanged by the v2.0.2
+figure and documentation update;
 the downloader selects its original release automatically.
 
 The archive includes the 6,048-observation primary evaluation, matched component
@@ -78,12 +79,13 @@ inside the immutable research archive. `paired_statistics.csv` records the
 
 ```bash
 python regenerate_routing_diagram.py
+python regenerate_rolling_protocol.py
 python regenerate_primary_figures.py --archive /path/to/research_archive
 python export_submission_assets.py --archive /path/to/research_archive
 ```
 
-The first command renders the final routing diagram as PNG, PDF and editable
-SVG. The second reconstructs the primary point-comparison figures from saved
+The first two commands render the routing and rolling-protocol diagrams as
+PNG, PDF and editable SVG. The third reconstructs the primary point-comparison figures from saved
 forecasts. The final table-cell exports are in `outputs/final_manuscript_tables/`.
 The asset-export command copies the deposited reference figures and table
 transcriptions. It preserves their original appearance; numerical recalculation
@@ -111,10 +113,11 @@ archived Chronos outputs. See [March training](docs/MARCH_TRAINING.md).
 - `environment/`: dependency specifications.
 - `SHA256SUMS.txt`: checksums of repository files as distributed by Git.
 
-The manifest on the main branch records the latest submission text and retains
-earlier document identities. The numerical v2.0.1 release remains fixed when
-the abstract or response wording is refined; its forecasts and experiment
-outputs are unchanged.
+The v2.0.2 manifest identifies the checked submission documents and retains
+earlier document identities. This patch aligns the non-congestion proxy
+notation, documents the five-quantile context-sensitivity score, corrects
+one descriptive-statistic rounding and supplies the updated rolling-protocol
+figure. The numerical v2.0.1 forecasts and experiment outputs remain fixed.
 
 [Data availability](DATA_AVAILABILITY.md) defines the research release.
 [CITATION.cff](CITATION.cff) provides citation metadata.

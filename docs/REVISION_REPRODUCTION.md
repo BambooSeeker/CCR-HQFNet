@@ -21,7 +21,7 @@ figure assets for comparison with the submitted document.
 
 ## Numerical reference
 
-Use the v2.0.1 repository with the complete v2.0.0 data archive. The downloader
+Use the v2.0.2 repository with the complete v2.0.0 data archive. The downloader
 reads the archive's own release tag, so both versions are selected explicitly.
 The authoritative final point and negative-price indices are the repository's
 `outputs/final_revision_audit/point_metric_traceability.csv` and

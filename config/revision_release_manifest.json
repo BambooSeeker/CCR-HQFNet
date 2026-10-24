@@ -2,10 +2,10 @@
   "release_name": "CCR-HQFNet revision-2 reproducibility release",
   "release_date": "2026-10-24",
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
-  "manuscript": "Revised manuscript_R2_integrated_clean_20261024.docx",
-  "response": "Point to point replies_R2_integrated_20261024.docx",
-  "manuscript_sha256": "bd5aa480de7fe597350cbe60337568b1195d53954b0ba4f00912456fb4ce4e6a",
-  "response_sha256": "16cdb89e01baddca6357afd3859d5675407c173b07f3c66c9149be5215523e45",
+  "manuscript": "Revised manuscript_R2_submission_clean_20261024.docx",
+  "response": "Point to point replies_R2_submission_20261024.docx",
+  "manuscript_sha256": "92c5784ab271a3902e1e16248f5c3467c417fe09a073de44913c2a1247c33686",
+  "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
     "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
@@ -94,7 +94,7 @@
     }
   ],
   "reproduction_note": "Download the versioned research archive and follow docs/REVISION_REPRODUCTION.md. Source identifiers retain provenance; current primary predictions are identified explicitly.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0",
   "archive": {
     "name": "CCR-HQFNet-v2.0.0-research.zip",
@@ -164,7 +164,7 @@
       }
     ],
     "release_tag": "v2.0.0",
-    "note": "Unchanged full research inputs and fitted artifacts; use with the v2.0.1 portable entry points and final numerical indices."
+    "note": "Unchanged full research inputs and fitted artifacts; use with the v2.0.2 portable entry points and final numerical indices."
   },
   "previous_submission": {
     "manuscript": "Revised manuscript_R2_Comments1_4_clean.docx",
@@ -173,8 +173,8 @@
     "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d"
   },
   "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
-  "marked_manuscript": "Revised manuscript_R2_integrated_marked_20261024.docx",
-  "marked_manuscript_sha256": "10abacb692216a4e0db06502b0dadc52d3673bb3737d5dad2774104f5364b6c4",
+  "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024.docx",
+  "marked_manuscript_sha256": "5dab6a81eab3089aefee8b74941f2190c9158d310639520dfb394d3f0a9e9cfc",
   "document_history": [
     {
       "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
@@ -191,8 +191,24 @@
       "response_sha256": "a9d817fd41087d4323d8f27a1ca62fc41de25b9e33244e35abc9f6b67a5672ee",
       "marked_manuscript": "Revised manuscript_R2_core_refined_marked_20261024.docx",
       "marked_manuscript_sha256": "126b5fc0bb6f595e5c9a366c7d04988055feb88fcd5d1a74ee182a1286c45455"
+    },
+    {
+      "manuscript": "Revised manuscript_R2_integrated_clean_20261024.docx",
+      "manuscript_sha256": "bd5aa480de7fe597350cbe60337568b1195d53954b0ba4f00912456fb4ce4e6a",
+      "response": "Point to point replies_R2_integrated_20261024.docx",
+      "response_sha256": "16cdb89e01baddca6357afd3859d5675407c173b07f3c66c9149be5215523e45",
+      "marked_manuscript": "Revised manuscript_R2_integrated_marked_20261024.docx",
+      "marked_manuscript_sha256": "10abacb692216a4e0db06502b0dadc52d3673bb3737d5dad2774104f5364b6c4"
     }
   ],
-  "document_revision": "2026-10-24: primary, extreme-negative-price, five-window stress and ablation evidence integrated in abstract and Reviewer 1 overall response; experimental results unchanged",
-  "numerical_release_tag": "v2.0.1"
+  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged",
+  "numerical_release_tag": "v2.0.1",
+  "source_release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2",
+  "current_figure_overrides": {
+    "Fig. 6": {
+      "path": "outputs/final_revision_figures/Fig6_rolling_protocol.png",
+      "sha256": "6479d06638bd5300c49aa87c23be572e285df31c2325665236dd58a530fa94b8",
+      "source": "regenerate_rolling_protocol.py"
+    }
+  }
 }
