@@ -4,7 +4,7 @@
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
   "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
   "response": "Point to point replies_R2_submission_20261024.docx",
-  "manuscript_sha256": "522ca6a31922a011e4e2cd6b2cf4a6a0fb85685693bcb91fc4a22e91c7f1fce1",
+  "manuscript_sha256": "7910319924be6c0cbc7540fdd8b00dd6ff77de93b049a75913ddbc9b7f80b949",
   "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
@@ -174,7 +174,7 @@
   },
   "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
   "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
-  "marked_manuscript_sha256": "5fe349432bf29e7255e0506c10eff69e468fe4df34cca6296c7dbb3937eae09d",
+  "marked_manuscript_sha256": "1fdf2ec8256fc56d6a369e74490723308291b427327914872f68a71dd10b215e",
   "document_history": [
     {
       "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
@@ -247,9 +247,17 @@
       "marked_manuscript_sha256": "f908784fac21a15a85cfed5453aa8aafb7dd8cae29ca8d32616e761316cd3689",
       "response": "Point to point replies_R2_submission_20261024.docx",
       "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf"
+    },
+    {
+      "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
+      "manuscript_sha256": "522ca6a31922a011e4e2cd6b2cf4a6a0fb85685693bcb91fc4a22e91c7f1fce1",
+      "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
+      "marked_manuscript_sha256": "5fe349432bf29e7255e0506c10eff69e468fe4df34cca6296c7dbb3937eae09d",
+      "response": "Point to point replies_R2_submission_20261024.docx",
+      "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf"
     }
   ],
-  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words",
+  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words; abstract conclusion grounded in supported extreme-negative-price forecasting and risk-assessment relevance after reference-paper reading; 225 words",
   "numerical_release_tag": "v2.0.1",
   "source_release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2",
   "current_figure_overrides": {
