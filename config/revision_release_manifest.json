@@ -2,10 +2,10 @@
   "release_name": "CCR-HQFNet revision-2 reproducibility release",
   "release_date": "2026-10-24",
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
-  "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
-  "response": "Point to point replies_R2_final_20261024.docx",
-  "manuscript_sha256": "a6d45b4161982e36a6529c51c83ed5f7fdc16f0a9b99035c244d0c26a3771f38",
-  "response_sha256": "eeaee5e50b4afd4f5d21e180cfd38ca7a27c7083a53ee74d42015253863ec210",
+  "manuscript": "Revised manuscript_R2_core_refined_clean_20261024.docx",
+  "response": "Point to point replies_R2_core_refined_20261024.docx",
+  "manuscript_sha256": "34c211b9c39bfa80499ced43441ee95e60a7de479f5589bdd6214511dc339d2c",
+  "response_sha256": "a9d817fd41087d4323d8f27a1ca62fc41de25b9e33244e35abc9f6b67a5672ee",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
     "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
@@ -173,6 +173,18 @@
     "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d"
   },
   "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
-  "marked_manuscript": "Revised manuscript_R2_final_marked_20261024.docx",
-  "marked_manuscript_sha256": "3976cbc0e754cc8d0f9be7341a41b96cd2f5ab064885c269104b2fdcfe56e9eb"
+  "marked_manuscript": "Revised manuscript_R2_core_refined_marked_20261024.docx",
+  "marked_manuscript_sha256": "126b5fc0bb6f595e5c9a366c7d04988055feb88fcd5d1a74ee182a1286c45455",
+  "document_history": [
+    {
+      "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
+      "response": "Point to point replies_R2_final_20261024.docx",
+      "manuscript_sha256": "a6d45b4161982e36a6529c51c83ed5f7fdc16f0a9b99035c244d0c26a3771f38",
+      "response_sha256": "eeaee5e50b4afd4f5d21e180cfd38ca7a27c7083a53ee74d42015253863ec210",
+      "marked_manuscript": "Revised manuscript_R2_final_marked_20261024.docx",
+      "marked_manuscript_sha256": "3976cbc0e754cc8d0f9be7341a41b96cd2f5ab064885c269104b2fdcfe56e9eb"
+    }
+  ],
+  "document_revision": "2026-10-24: abstract and Reviewer 1 overall response refined; experimental results unchanged",
+  "numerical_release_tag": "v2.0.1"
 }

@@ -111,6 +111,11 @@ archived Chronos outputs. See [March training](docs/MARCH_TRAINING.md).
 - `environment/`: dependency specifications.
 - `SHA256SUMS.txt`: checksums of repository files as distributed by Git.
 
+The manifest on the main branch records the latest submission text and retains
+earlier document identities. The numerical v2.0.1 release remains fixed when
+the abstract or response wording is refined; its forecasts and experiment
+outputs are unchanged.
+
 [Data availability](DATA_AVAILABILITY.md) defines the research release.
 [CITATION.cff](CITATION.cff) provides citation metadata.
 Author-written code is covered by the [MIT License](LICENSE); base-model and
