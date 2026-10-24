@@ -2,9 +2,9 @@
   "release_name": "CCR-HQFNet revision-2 reproducibility release",
   "release_date": "2026-10-24",
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
-  "manuscript": "Revised manuscript_R2_submission_clean_20261024.docx",
+  "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
   "response": "Point to point replies_R2_submission_20261024.docx",
-  "manuscript_sha256": "03f3aa10ef02e318bcf29bd746f2c106427c754af7d8020bcfd6b569ddbd559b",
+  "manuscript_sha256": "ca92ee770b1ec7c40d0c26bfbdf2be6842ef577b06e45b0907dd63c8c0ac62a1",
   "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
@@ -173,8 +173,8 @@
     "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d"
   },
   "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
-  "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024.docx",
-  "marked_manuscript_sha256": "aca9ba2ac73c14d8e3a934165e5b6e2e03f59833d5734fe565155fc1b722355e",
+  "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
+  "marked_manuscript_sha256": "d93ce906d827b6c2c1d164ebcab1b4d3e70037b24f07237508b91bac3ff3820f",
   "document_history": [
     {
       "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
@@ -215,9 +215,17 @@
       "marked_manuscript_sha256": "8536b36629f3cd7630bb67a1eda1e93106d42fab5eb7975cdd47e9adff4d6a11",
       "response": "Point to point replies_R2_submission_20261024.docx",
       "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf"
+    },
+    {
+      "manuscript": "Revised manuscript_R2_submission_clean_20261024.docx",
+      "manuscript_sha256": "03f3aa10ef02e318bcf29bd746f2c106427c754af7d8020bcfd6b569ddbd559b",
+      "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024.docx",
+      "marked_manuscript_sha256": "aca9ba2ac73c14d8e3a934165e5b6e2e03f59833d5734fe565155fc1b722355e",
+      "response": "Point to point replies_R2_submission_20261024.docx",
+      "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf"
     }
   ],
-  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained",
+  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words",
   "numerical_release_tag": "v2.0.1",
   "source_release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2",
   "current_figure_overrides": {
