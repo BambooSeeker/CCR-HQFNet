@@ -1,0 +1,10 @@
+Model,Tail MAE,Signed error,"Underprediction
+(%)","Peak-event recall
+(%)"
+CCR-HQFNet,302.844,-302.844,100.00,0.00
+Fine-tuned Chronos-2,274.421,-269.938,96.43,10.20
+TimeXer,315.368,-307.249,95.24,12.24
+TimesFM-2.5,337.942,-337.037,98.81,4.08
+TFT,366.260,-360.794,96.43,6.12
+HybridTF-DilatedConv,387.588,-387.588,100.00,0.00
+LightGBM,412.039,-412.039,100.00,0.00

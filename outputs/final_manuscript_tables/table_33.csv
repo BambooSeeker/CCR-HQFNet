@@ -1,0 +1,6 @@
+Model,"PICP 90
+(%)",MPIW,Winkler score,WIS
+Native Chronos-2,87.25,278.475,483.095,37.851
+Chronos-2 with market floor,87.25,272.421,477.042,37.637
+Common shift before projection,88.10,278.475,470.796,35.546
+CCR-HQFNet after projection,88.10,273.905,466.226,35.393

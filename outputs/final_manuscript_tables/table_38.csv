@@ -1,0 +1,10 @@
+Context (intervals),96,192,384
+History,2 days,4 days,8 days
+Observations,"3,168","3,168","3,168"
+MAE (CNY/MWh),73.691,74.986,72.372
+RMSE (CNY/MWh),128.941,128.118,124.822
+Negative-price MAE (CNY/MWh),599.163,589.059,559.226
+Mean pinball loss (CNY/MWh),19.659,19.983,18.837
+PICP 90 (%),89.43,88.48,88.42
+MPIW (CNY/MWh),356.634,339.468,317.439
+Winkler score (CNY/MWh),489.572,497.307,459.739

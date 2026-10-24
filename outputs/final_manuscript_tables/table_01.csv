@@ -1,0 +1,13 @@
+Method family,Representative studies,Primary advance,Relevance to RTLMP,Forecast output
+Statistical time-series,Weron [1]; Weron and Misiorek [2],Autoregression and volatility dynamics,Data-efficient temporal benchmark,Point / density
+Regularized EPF,"Lago et al. [11], [12]",High-dimensional linear price model,"Nord Pool, PJM, and EPEX day-ahead benchmarks",Point
+Gradient boosting,Huang et al. [10]; Ke et al. [21],Nonlinear feature interactions,Shandong 96-point day-ahead prices,Point / quantile
+Deep recurrent / convolutional,Yang and Schell [5]; Ugurlu et al. [22],Learned local and sequential dynamics,Turkish day-ahead and NYISO real-time prices,Point
+Temporal fusion,Lim et al. [13],Variable selection and multi-horizon fusion,Known future covariates,Point / quantile
+Patch / inverted Transformer,Nie et al. [14]; Liu et al. [15],Long-context and cross-variable representation,Complete multi-step trajectories,Point
+Exogenous Transformer,Wang et al. [16],Explicit endogenous-exogenous coupling,Target-day market information,Point
+Decoder-only TSFM,Das et al. [26],Large-scale cross-domain pretraining,Transfer under limited local data,Point / quantile
+Probabilistic TSFM,"Ansari et al. [24], [27]",Pretrained distributions and covariate-informed in-context learning,Probabilistic carrier for regional adaptation,Quantile
+Universal / sparse-expert TSFM,Woo et al. [28]; Liu et al. [29],Cross-frequency pretraining and expert specialization,Broad representation transfer,Distributional
+Probabilistic EPF,Uniejewski and Weron [17]; O'Connor et al. [18],Calibrated quantiles and conformal intervals,Polish/Nordic day-ahead and Irish balancing prices,Quantile / interval
+Component- and grid-aware LMP,Zheng et al. [23]; Yi et al. [20],Component decomposition and grid-informed features,CAISO component LMP and Hubei real-time prices,Point

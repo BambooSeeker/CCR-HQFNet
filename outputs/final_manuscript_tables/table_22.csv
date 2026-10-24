@@ -1,0 +1,67 @@
+Market state,Model,MAE,RMSE,"MAPE
+(%)","sMAPE
+(%)"
+Typical-normal,CCR-HQFNet,33.041,66.595,8.84,8.88
+Typical-normal,Fine-tuned Chronos-2,36.839,71.959,9.93,10.10
+Typical-normal,LightGBM,36.774,67.459,9.74,9.86
+Typical-normal,TimesFM-2.5,36.917,70.897,9.83,9.86
+Typical-normal,LightGBM Quantile,38.291,72.847,9.75,10.25
+Typical-normal,TimeXer,43.503,83.270,11.64,10.99
+Typical-normal,PatchTST,40.193,72.738,10.90,10.51
+Typical-normal,TFT,44.310,79.355,11.72,12.06
+Typical-normal,HybridTF-DilatedConv,43.481,72.872,11.74,12.01
+Typical-normal,LEAR,46.645,76.300,13.08,12.51
+Typical-normal,Transformer,48.208,82.117,13.06,13.65
+Typical-normal,CNN-Transformer,45.305,81.036,11.82,12.72
+Typical-normal,LSTM,49.396,80.945,13.59,14.16
+Typical-normal,CNN-LSTM,68.740,128.946,19.13,16.95
+Typical-normal,Seasonal Naive,62.139,111.625,17.22,16.99
+Typical-normal,DLinear,85.430,114.804,23.74,25.86
+High-volatility,CCR-HQFNet,114.040,162.885,22.04,21.46
+High-volatility,Fine-tuned Chronos-2,123.716,171.596,24.34,24.04
+High-volatility,LightGBM,123.297,175.374,21.96,23.49
+High-volatility,TimesFM-2.5,129.158,179.191,24.40,26.30
+High-volatility,LightGBM Quantile,128.516,185.222,22.53,24.59
+High-volatility,TimeXer,121.048,166.233,23.25,23.05
+High-volatility,PatchTST,125.511,174.162,25.46,23.84
+High-volatility,TFT,117.354,172.233,21.58,22.56
+High-volatility,HybridTF-DilatedConv,127.418,180.906,23.15,24.76
+High-volatility,LEAR,117.041,165.913,23.20,22.14
+High-volatility,Transformer,131.874,189.534,23.09,25.92
+High-volatility,CNN-Transformer,155.659,218.135,27.52,32.61
+High-volatility,LSTM,133.280,184.276,24.88,26.00
+High-volatility,CNN-LSTM,174.214,239.303,38.97,30.14
+High-volatility,Seasonal Naive,175.708,233.537,36.93,33.55
+High-volatility,DLinear,171.791,225.817,33.77,37.69
+Extreme-low,CCR-HQFNet,75.757,148.024,37.46,29.81
+Extreme-low,Fine-tuned Chronos-2,92.051,169.566,43.94,33.22
+Extreme-low,LightGBM,83.401,149.035,39.71,30.77
+Extreme-low,TimesFM-2.5,87.815,163.852,42.13,30.63
+Extreme-low,LightGBM Quantile,82.887,154.468,39.59,29.71
+Extreme-low,TimeXer,82.179,152.056,39.66,30.27
+Extreme-low,PatchTST,88.255,152.705,41.57,32.39
+Extreme-low,TFT,77.642,137.856,34.82,29.10
+Extreme-low,HybridTF-DilatedConv,85.745,148.950,39.54,32.52
+Extreme-low,LEAR,90.527,149.199,40.44,33.73
+Extreme-low,Transformer,82.170,145.426,38.09,30.23
+Extreme-low,CNN-Transformer,80.579,146.678,38.21,29.38
+Extreme-low,LSTM,93.751,157.523,43.07,33.84
+Extreme-low,CNN-LSTM,90.117,155.841,41.19,32.00
+Extreme-low,Seasonal Naive,120.641,206.193,54.71,37.83
+Extreme-low,DLinear,98.233,170.416,46.02,33.38
+Extreme-high,CCR-HQFNet,119.743,184.203,23.56,25.27
+Extreme-high,Fine-tuned Chronos-2,122.172,182.768,25.37,26.01
+Extreme-high,LightGBM,135.912,205.448,24.36,26.98
+Extreme-high,TimesFM-2.5,128.593,195.740,24.56,25.67
+Extreme-high,LightGBM Quantile,139.333,213.303,24.56,27.45
+Extreme-high,TimeXer,125.626,192.124,24.34,24.91
+Extreme-high,PatchTST,138.741,200.651,27.47,27.63
+Extreme-high,TFT,137.015,205.907,25.56,27.41
+Extreme-high,HybridTF-DilatedConv,133.582,201.639,24.89,26.97
+Extreme-high,LEAR,124.196,183.171,25.01,24.87
+Extreme-high,Transformer,145.244,215.847,26.55,28.84
+Extreme-high,CNN-Transformer,152.758,224.105,27.41,31.76
+Extreme-high,LSTM,144.456,216.765,25.79,28.98
+Extreme-high,CNN-LSTM,162.932,231.535,34.64,31.20
+Extreme-high,Seasonal Naive,183.142,268.761,35.45,39.82
+Extreme-high,DLinear,155.264,229.697,28.38,31.45

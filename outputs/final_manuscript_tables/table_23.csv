@@ -1,0 +1,56 @@
+Market condition,Prediction pathway,MAE,RMSE,"MAPE
+(%)"
+"Recurrent negative-price period
+14 days; 672 intervals",Complete CCR-HQFNet,34.674,72.662,15.97
+"Recurrent negative-price period
+14 days; 672 intervals",Supply-price pathway + selective control,34.705,72.704,15.99
+"Recurrent negative-price period
+14 days; 672 intervals",Congestion-conditioned carrier,39.401,83.305,18.51
+"Recurrent negative-price period
+14 days; 672 intervals",Blind residual carrier,39.442,83.369,18.54
+"Recurrent negative-price period
+14 days; 672 intervals",Dual pathways without selective control,38.155,81.925,17.83
+"Recurrent negative-price period
+14 days; 672 intervals",Fine-tuned Chronos-2,39.185,82.718,18.37
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Complete CCR-HQFNet,37.384,72.255,19.87
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Supply-price pathway + selective control,38.918,71.289,20.38
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Congestion-conditioned carrier,53.890,150.158,30.10
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Blind residual carrier,55.007,147.989,30.38
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Dual pathways without selective control,59.818,117.564,30.59
+"Congestion-active period
+7 days; 336 intervals
+
+
+
+
+",Fine-tuned Chronos-2,55.204,154.476,30.82

@@ -1,0 +1,9 @@
+Evaluation sample,False / all actions,Action share (%),Weighted share (%),False predictions / nonnegative targets,False alarm (%)
+Primary four-season,0/1,0.00,0.00,0/5976,0.00
+"March 1-14, 2026",10/59,16.95,14.41,10/608,1.64
+Stress W1,0/0,—,—,0/1343,0.00
+Stress W2,0/0,—,—,0/1249,0.00
+Stress W3,4/14,28.57,28.19,4/1254,0.32
+Stress W4,50/206,24.27,23.39,50/1110,4.50
+Stress W5,43/58,74.14,74.34,43/1313,3.27
+Stress pooled,97/278,34.89,34.31,97/6269,1.55

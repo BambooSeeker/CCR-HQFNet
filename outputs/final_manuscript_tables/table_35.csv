@@ -1,0 +1,8 @@
+Reported in,Window,Pathway,Actual / predicted negative N,Negative MAE,"Recall / precision
+(%)",FP,Key
+Table 9 text,1-14 March 2026,Complete CCR-HQFNet,64 / 59,110.954,76.56 / 83.05,10,T01
+Table 9 text,1-14 March 2026,Congestion-conditioned carrier,64 / 40,161.240,54.69 / 87.50,5,T02
+Table 9 text,1-14 March 2026,Fine-tuned Chronos-2,64 / 41,159.257,56.25 / 87.80,5,T03
+Fig. 10,8-14 March 2026,Complete CCR-HQFNet,49 / 48,88.212,77.55 / 79.17,10,T04
+Fig. 10,8-14 March 2026,Blind residual carrier,49 / 39,121.742,69.39 / 87.18,5,T05
+Fig. 10,8-14 March 2026,Dual pathways without selective control,49 / 73,62.592,97.96 / 65.75,25,T06

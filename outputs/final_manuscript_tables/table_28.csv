@@ -1,0 +1,12 @@
+Policy,MAE,False alarm (%),"Negative recall
+(%)","Negative precision
+(%)",Negative MAE
+Adaptive Wald screen,34.674,1.64,76.56,83.05,110.954
+Clopper-Pearson screen,36.721,1.64,64.06,80.39,134.658
+Wald screening limit 0.20,45.309,0.00,0.00,—,232.368
+Wald screening limit 0.25,43.877,0.00,7.81,100.00,217.334
+Wald screening limit 0.40,36.474,4.44,89.06,67.86,92.481
+"Minimum calibration activations: 4, 8 or 16",34.674,1.64,76.56,83.05,110.954
+Nonnegative-MAE tolerance: 1.00,45.309,0.00,0.00,—,232.368
+Nonnegative-MAE tolerance: 1.10,35.292,2.14,76.56,79.03,110.824
+"Negative-MAE weight: 0, 0.15 or 0.30",34.674,1.64,76.56,83.05,110.954

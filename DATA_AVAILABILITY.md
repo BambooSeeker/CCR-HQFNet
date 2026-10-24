@@ -8,6 +8,9 @@ has authorized publication of the research inputs included in this release.
 
 Download the research archive from the
 [v2.0.0 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0).
+Use the final numerical indices and portable entry points from the
+[v2.0.1 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.1).
+The downloader selects the unchanged full archive automatically.
 The archive contains processed study inputs, historical inputs needed to
 construct lagged predictors, chronological fold definitions, model artifacts
 and experiment outputs. Unrelated operational records and access credentials

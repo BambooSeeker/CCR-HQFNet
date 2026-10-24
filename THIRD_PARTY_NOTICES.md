@@ -11,6 +11,9 @@ identify compatibility and do not imply endorsement.
   terms.
 - Python dependencies listed under `environment/` retain their respective
   licenses.
+- The regenerated routing diagram uses Matplotlib and its bundled DejaVu
+  fonts. DejaVu is distributed under its permissive font license; the source
+  SVG remains editable and the PDF embeds the font for consistent rendering.
 
 Users are responsible for reviewing and complying with the applicable licenses
 before downloading third-party weights or running the full pipeline.

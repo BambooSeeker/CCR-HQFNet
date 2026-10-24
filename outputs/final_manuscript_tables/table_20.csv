@@ -1,0 +1,17 @@
+Model,Category,Principal setting
+Seasonal Naive,Seasonal rule,Previous matched seasonal trajectory
+LEAR,Linear statistical,Regularized autoregression with calendar variables
+LightGBM,Tree ensemble,Point objective; fold-wise validation
+LightGBM Quantile,Tree ensemble,Quantile objectives for interval forecasting
+LSTM,Deep sequence,Two recurrent layers with validation stopping
+CNN-LSTM,Deep sequence,Temporal convolution followed by recurrent encoding
+CNN-Transformer,Deep sequence,Local convolution and self-attention
+DLinear,Long-horizon,Trend-seasonal decomposition with linear heads
+PatchTST,Long-horizon,Patch-based channel-independent Transformer
+Transformer,Attention,Standard encoder with direct multi-horizon output
+TFT,Attention,Variable selection and temporal fusion
+TimeXer,Exogenous Transformer,Endogenous patches with exogenous variates
+HybridTF-DilatedConv,Initial encoder,Transformer plus dilated convolution
+TimesFM-2.5,Foundation model,Pretrained backbone adapted on each training fold
+Fine-tuned Chronos-2,Foundation model,Same fold-specific LoRA carrier without external market-state pathways
+CCR-HQFNet,Proposed,Foundation carrier with factorized routing and risk control

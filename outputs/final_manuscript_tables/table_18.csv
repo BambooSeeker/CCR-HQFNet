@@ -1,0 +1,14 @@
+Component,Setting
+Training window,90 days
+Validation window,7 days
+Test window,"Seven days, with the terminal partial folds specified below."
+Stride,7 days
+Forecast horizon,48 half-hourly intervals
+Random seed,42 for primary runs; 7 and 2026 for the repeated-seed baseline comparisons in Appendix A.
+Scaling,Estimated from the training portion of each fold
+Model selection,Training and validation data only; test outcomes are excluded from parameter selection.
+Primary registry,"20 forecast origins; 126 days and 6,048 observations"
+Mechanism audit,Continuous recurrent-negative-price and congestion-active periods
+Market-stage boundary,Revised continuous settlement before 7 August 2025; formal operation from 7 August 2025 [32].
+Fold-to-stage mapping,"Spring F1–F5: revised stage; Summer F1 (1–7 August): transition fold with six revised-stage days and one formal-operation day; Summer F2–F5, Autumn F1–F5, and Winter F1–F5: formal operation."
+Terminal partial folds,Seventeen complete seven-day folds; Spring F5: 30 April (1 day); Summer F5: 29–31 August (3 days); Winter F5: 29–31 January (3 days). Test days do not overlap.

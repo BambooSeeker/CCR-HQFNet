@@ -1,0 +1,14 @@
+Configuration,MAE,RMSE,Negative MAE,MAE gain,95% interval
+Chronos-2 carrier,65.243,121.427,409.676,5.686,"[4.157, 7.271]"
+Carrier with market floor,65.207,121.365,408.620,5.650,"[4.122, 7.229]"
+Chronos-2 + ungated residual,62.280,118.163,384.892,2.723,"[1.453, 4.013]"
+Market-information residual only,59.644,115.305,352.807,0.086,"[-0.323, 0.471]"
+Full-information residual only,60.043,115.657,357.951,0.485,"[0.104, 0.882]"
+Congestion-only pathway,59.703,115.347,354.249,0.146,"[-0.131, 0.422]"
+"Supply-only, same pair",59.504,115.050,361.613,-0.054,"[-0.357, 0.227]"
+"Supply-only, selected fit",59.468,115.097,361.500,-0.090,"[-0.414, 0.212]"
+Dual pathway without acceptance,60.231,115.953,348.372,0.674,"[0.117, 1.216]"
+Complete without zero fallback,59.700,115.346,353.970,0.142,"[-0.138, 0.422]"
+"Constant mixture, market floor",59.683,115.532,355.934,0.125,"[-0.263, 0.470]"
+"Constant mixture, nonnegative",59.570,115.305,367.076,0.013,"[-0.297, 0.265]"
+Complete CCR-HQFNet,59.557,115.078,363.104,—,—

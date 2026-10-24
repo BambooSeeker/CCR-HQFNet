@@ -1,0 +1,12 @@
+Item,Specification
+Market and target,Half-hourly Zhejiang-market RTLMP trajectory
+Resolution,30 min; 48 delivery intervals per day
+Available history,January 2025 to July 2026
+Lagged realized series,"RTLMP, price components, load, total generation, PV, wind, hydro, and aggregate electricity at lags 96, 144, and 336"
+Safe target statistics,"RTLMP mean, standard deviation, minimum, and maximum over the latest completed 48-interval history"
+Target-horizon market data,"Released load forecast, generation and supply schedules, external and fixed dispatch plans, wind, PV, hydro, and renewable forecasts"
+Supply-price vector Mₜ,"Non-congestion day-ahead price baseline, net load, renewable penetration, bidding-space and supply-adequacy proxies, calendar, and market phase"
+Derived ratios,"External-plan/load, fixed-output/load, generation/load, and renewable-supply indices"
+Congestion vector Cₜ,"Released day-ahead congestion component, absolute magnitude, differences at 1, 2, and 4 intervals, and absolute first-difference shock indicator"
+Unavailable information,"Target-day realized RTLMP, realized load/generation, redispatch, and realized real-time congestion"
+Evaluation registry,"Four fixed seasonal windows; 126 days and 6,048 half-hourly observations"

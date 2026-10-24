@@ -1,0 +1,18 @@
+Reported in,Window,Pathway,N / MAPE N,MAE,RMSE,"MAPE
+(%)",Key
+Table 7,Four-season registry,CCR-HQFNet,6048 / 6024,59.557,115.078,15.76,P01
+Table 9,1-14 March 2026,Complete CCR-HQFNet,672 / 653,34.674,72.662,15.97,P02
+Table 9,1-14 March 2026,Supply-price pathway + selective control,672 / 653,34.705,72.704,15.99,P03
+Table 9,1-14 March 2026,Congestion-conditioned carrier,672 / 653,39.401,83.305,18.51,P04
+Table 9,1-14 March 2026,Blind residual carrier,672 / 653,39.442,83.369,18.54,P05
+Table 9,1-14 March 2026,Dual pathways without selective control,672 / 653,38.155,81.925,17.83,P06
+Table 9,1-14 March 2026,Fine-tuned Chronos-2,672 / 653,39.185,82.718,18.37,P07
+Table 9,22-28 June 2025,Complete CCR-HQFNet,336 / 330,37.384,72.255,19.87,P08
+Table 9,22-28 June 2025,Supply-price pathway + selective control,336 / 330,38.918,71.289,20.38,P09
+Table 9,22-28 June 2025,Congestion-conditioned carrier,336 / 330,53.890,150.158,30.10,P10
+Table 9,22-28 June 2025,Blind residual carrier,336 / 330,55.007,147.989,30.38,P11
+Table 9,22-28 June 2025,Dual pathways without selective control,336 / 330,59.818,117.564,30.59,P12
+Table 9,22-28 June 2025,Fine-tuned Chronos-2,336 / 330,55.204,154.476,30.82,P13
+Fig. 10,8-14 March 2026,Complete CCR-HQFNet,336 / 328,34.075,72.829,16.87,P14
+Fig. 10,8-14 March 2026,Blind residual carrier,336 / 328,38.891,81.865,19.72,P15
+Fig. 10,8-14 March 2026,Dual pathways without selective control,336 / 328,36.970,80.622,18.73,P16

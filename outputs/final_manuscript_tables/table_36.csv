@@ -1,0 +1,71 @@
+Field,Definition,Availability,Dataset
+price_day_ahead,Released day-ahead LMP,Released forecast / schedule,Both
+price_day_ahead_cong,Released day-ahead congestion component,Released forecast / schedule,Both
+price_day_ahead_load,Released day-ahead loss component,Released forecast / schedule,Both
+load_day_ahead_pred,Day-ahead load forecast,Released forecast / schedule,Both
+elec_exter_plan,Scheduled external electricity,Released forecast / schedule,Both
+elec_fix_out_plan,Scheduled fixed output,Released forecast / schedule,Both
+energy_hydro_renewable,Released hydro and renewable schedule,Released forecast / schedule,Both
+elec_gene_total_pred,Forecast total generation,Released forecast / schedule,Both
+elec_day_ahead_all,Day-ahead cleared electricity,Released forecast / schedule,Both
+price_day_ahead_cong_abs,Absolute day-ahead congestion component,Released forecast / schedule,Both
+price_day_ahead_cong_diff1,One-interval difference in day-ahead congestion,Released forecast / schedule,Both
+price_day_ahead_cong_diff2,Two-interval difference in day-ahead congestion,Released forecast / schedule,Both
+price_day_ahead_cong_diff4,Four-interval difference in day-ahead congestion,Released forecast / schedule,Both
+price_day_ahead_cong_shock,Absolute first difference in day-ahead congestion,Released forecast / schedule,Both
+"price_real_lag{96,144,336}",Real-time LMP; lagged by the indicated half-hour intervals,Lagged,Both
+"price_real_energy_lag{96,144,336}",Recorded real-time energy-price field; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"price_real_load_lag{96,336}",Real-time loss component; lagged by the indicated half-hour intervals,Lagged,Mechanism
+price_real_load_lag144,Real-time loss component; lagged by the indicated half-hour intervals,Lagged,Both
+"load_real_lag{96,144,336}",Realized load; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"elec_gene_real_all_lag{96,144,336}",Realized total generation; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"photo_gene_total_real_lag{96,144,336}",Realized photovoltaic generation; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"elec_gene_real_wind_lag{96,144,336}",Realized wind generation; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"elec_gene_real_water_lag{96,144,336}",Realized hydro generation; lagged by the indicated half-hour intervals,Lagged,Mechanism
+"elec_real_all_lag{96,144,336}",Realized electricity quantity; lagged by the indicated half-hour intervals,Lagged,Mechanism
+price_real_safe48_mean,Mean of the most recent fully observable 48-interval block,Historical,Both
+price_real_safe48_std,Standard deviation of the most recent fully observable 48-interval block,Historical,Both
+price_real_safe48_min,Minimum of the most recent fully observable 48-interval block,Historical,Both
+price_real_safe48_max,Maximum of the most recent fully observable 48-interval block,Historical,Both
+market_phase_trial_2024,Indicator for the 2024 trial stage,Calendar,Both
+market_phase_revised_2025,Indicator for the revised continuous-settlement stage,Calendar,Both
+market_phase_formal,Indicator for formal operation,Calendar,Both
+slot_sin,Sine encoding of the half-hour slot,Calendar,Both
+slot_cos,Cosine encoding of the half-hour slot,Calendar,Both
+slot_norm,Normalized half-hour slot index,Calendar,Both
+price_day_ahead_energy_proxy,Day-ahead LMP less its released congestion component,Released forecast / schedule,Both
+market_bid_space_proxy,Forecast load less fixed output and external schedule,Released forecast / schedule,Both
+supply_adequacy_proxy,Forecast generation minus the bidding-space proxy,Released forecast / schedule,Both
+external_plan_load_ratio,External schedule divided by the load scale,Released forecast / schedule,Both
+fixed_output_load_ratio,Fixed output divided by the load scale,Released forecast / schedule,Both
+generation_load_ratio,Forecast generation divided by the load scale,Released forecast / schedule,Both
+renewable_supply_index,Hydro-renewable schedule divided by the load scale,Released forecast / schedule,Both
+bidding_space_pred,Forecast bidding-space field,Released forecast / schedule,Seasonal
+bidding_space_pred_lag96,Forecast bidding-space field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+bidding_space_real_lag96,Realized bidding-space field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+chronos2_lora,Fold-adapted carrier median supplied to downstream models,Model output,Both
+coal_gas_nuclear_pred,"Forecast coal, gas and nuclear aggregate",Released forecast / schedule,Seasonal
+coal_gas_nuclear_pred_lag96,"Forecast coal, gas and nuclear aggregate; lagged by the indicated half-hour intervals",Lagged,Seasonal
+coal_gas_nuclear_real_lag96,"Realized coal, gas and nuclear aggregate; lagged by the indicated half-hour intervals",Lagged,Seasonal
+demand_pred,Forecast demand field,Released forecast / schedule,Seasonal
+demand_pred_lag96,Forecast demand field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+demand_real_lag96,Realized demand field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+elec_real_all_lag192,Realized electricity quantity; lagged by the indicated half-hour intervals,Lagged,Seasonal
+photo_gene_total_pred,Forecast photovoltaic generation,Released forecast / schedule,Seasonal
+"price_day_ahead_lag{96,144,336}",Released day-ahead LMP; lagged by the indicated half-hour intervals,Lagged,Seasonal
+price_real_energy_lag192,Recorded real-time energy-price field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+renewable_penetration_pred,Forecast renewable-penetration field,Released forecast / schedule,Seasonal
+supply_pred,Forecast supply field,Released forecast / schedule,Seasonal
+supply_pred_lag96,Forecast supply field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+supply_real_lag96,Realized supply field; lagged by the indicated half-hour intervals,Lagged,Seasonal
+water_gene_total_pred,Forecast hydro generation,Released forecast / schedule,Seasonal
+wind_gene_total_pred,Forecast wind generation,Released forecast / schedule,Seasonal
+energy_proxy,Alias of the day-ahead energy-price proxy used by the primary residual models.,Released forecast / schedule,Seasonal
+Carrier quantiles,"carrier_q05, carrier_q10, carrier_q50, carrier_q90 and carrier_q95 from the fold-specific Chronos-2 forecasts.",Model output,Seasonal
+Carrier-derived differences,carrier_width90 is q95 minus q05; carrier_lower_spread is q50 minus q10; carrier_upper_spread is q90 minus q50; carrier_energy_difference is q50 minus energy_proxy.,Model output / released forecast,Seasonal
+Additional calendar encodings,dow_sin and dow_cos encode the weekday; is_weekend identifies Saturday and Sunday; annual_sin and annual_cos use the day of year with a 365.25-day period.,Calendar,Seasonal
+net_load_pred,"Forecast load minus external schedule, fixed output, photovoltaic generation and wind generation.",Released forecast / schedule,Seasonal
+"historical_basis_{96,144,336}",Lagged real-time LMP minus lagged day-ahead LMP at the same timestamp offset.,Lagged,Seasonal
+Forecast-curve daily summaries,"For each curve u defined in the notes, u_day_{mean,std,min,max,deviation,rank} gives its daily mean, sample standard deviation, minimum, maximum, deviation from the mean and percentile rank.",Released forecast / schedule,Seasonal
+Forecast-curve adjacent slots,"u_known_slot_{-4,-2,-1,1,2,4} shifts each released daily curve by the indicated half-hour intervals; missing boundary values use the nearest available value within that curve.",Released forecast / schedule,Seasonal
+Congestion daily summaries,"congestion_day_{mean,std,min,max,deviation} describes the released day-ahead congestion trajectory using the daily statistics and point deviation.",Released forecast / schedule,Seasonal

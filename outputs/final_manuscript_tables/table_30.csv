@@ -1,0 +1,26 @@
+Season,Model,"PICP 90
+(%)",MPIW,WIS
+Spring,CCR-HQFNet,88.72,266.879,36.832
+Spring,Fine-tuned Chronos-2,85.85,275.517,42.660
+Spring,TFT-Quantile,72.99,140.565,41.936
+Spring,LightGBM-Quantile,78.81,168.392,40.273
+Spring,LightGBM-CQR,82.40,212.905,38.699
+Spring,LEAR split conformal,86.93,266.531,46.618
+Summer,CCR-HQFNet,85.95,151.384,25.374
+Summer,Fine-tuned Chronos-2,85.95,151.384,25.429
+Summer,TFT-Quantile,84.41,153.258,30.743
+Summer,LightGBM-Quantile,91.60,234.925,29.456
+Summer,LightGBM-CQR,92.94,256.473,32.387
+Summer,LEAR split conformal,88.84,153.446,27.082
+Autumn,CCR-HQFNet,89.82,564.083,63.902
+Autumn,Fine-tuned Chronos-2,90.54,571.589,67.665
+Autumn,TFT-Quantile,69.11,301.050,77.278
+Autumn,LightGBM-Quantile,76.55,377.112,75.003
+Autumn,LightGBM-CQR,86.67,539.270,70.560
+Autumn,LEAR split conformal,86.43,577.768,70.421
+Winter,CCR-HQFNet,87.70,75.377,11.879
+Winter,Fine-tuned Chronos-2,86.16,77.397,12.113
+Winter,TFT-Quantile,90.59,146.580,14.854
+Winter,LightGBM-Quantile,89.85,99.951,11.554
+Winter,LightGBM-CQR,91.06,106.360,11.956
+Winter,LEAR split conformal,85.22,139.944,22.240

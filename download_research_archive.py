@@ -19,7 +19,7 @@ def main():
     manifest=json.loads((Path(__file__).parent/'config/revision_release_manifest.json').read_text(encoding='utf-8'))
     archive=manifest['archive']
     args.output.mkdir(parents=True,exist_ok=True)
-    base=manifest['repository']+'/releases/download/v'+manifest['version']+'/'
+    base=manifest['repository']+'/releases/download/'+archive.get('release_tag','v'+manifest['version'])+'/'
     def fetch(part):
         dest=args.output/part['name']
         if dest.exists() and dest.stat().st_size==part['bytes'] and digest(dest)==part['sha256']:

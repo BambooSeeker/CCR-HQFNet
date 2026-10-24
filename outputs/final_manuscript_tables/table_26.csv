@@ -1,0 +1,27 @@
+Registry fold,Target days,Calibration negatives (range),Admissible days,Selected policy,Selected n (true/false); action share / Wald screen
+Spring-01,7,15–55,1/7,Day-specific calibrated policy,"20 (17/3)
+risk 0.150–0.150
+90% screen 0.252–0.252"
+Spring-02,7,14–46,1/7,Day-specific calibrated policy,"16 (13/3)
+risk 0.188–0.188
+90% screen 0.313–0.313"
+Spring-03,7,22–32,6/7,Day-specific calibrated policy,"82 (71/11)
+risk 0.118–0.143
+90% screen 0.218–0.275"
+Spring-04,7,20–46,0/7,No admissible policy,—
+Spring-05,1,39–39,0/1,No admissible policy,—
+Summer-01,7,5–16,0/7,No admissible policy,—
+Summer-02,7,3–8,0/7,No admissible policy,—
+Summer-03,7,0–6,0/7,No admissible policy,—
+Summer-04,7,0–6,0/7,No admissible policy,—
+Summer-05,3,0–0,0/3,No admissible policy,—
+Autumn-01,7,6–6,0/7,No admissible policy,—
+Autumn-02,7,4–6,0/7,No admissible policy,—
+Autumn-03,7,0–4,0/7,No admissible policy,—
+Autumn-04,7,0–4,0/7,No admissible policy,—
+Autumn-05,7,0–6,0/7,No admissible policy,—
+Winter-01,7,0–6,0/7,No admissible policy,—
+Winter-02,7,2–5,0/7,No admissible policy,—
+Winter-03,7,1–2,0/7,No admissible policy,—
+Winter-04,7,0–2,0/7,No admissible policy,—
+Winter-05,3,0–2,0/3,No admissible policy,—

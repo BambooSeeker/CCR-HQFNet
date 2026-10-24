@@ -1,0 +1,8 @@
+Evaluation subset,N,Carrier + floor,Ungated residual,Complete model,MAE gain
+All observations,6048,65.207,62.280,59.557,2.723
+Typical-normal days,3792,36.839,35.552,33.041,2.511
+High-volatility days,624,123.716,118.224,114.040,4.184
+Extreme-low days,720,91.778,81.781,75.757,6.024
+Extreme-high days,912,122.149,119.742,119.743,-0.001
+Negative-price intervals,72,408.620,384.892,363.104,21.788
+Price-floor intervals,29,474.052,440.551,398.322,42.229

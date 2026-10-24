@@ -8,7 +8,8 @@ authors:
   - family-names: Hou
     given-names: Peng
     email: houpeng2026@tju.edu.cn
-  - family-names: Jinrongsen
+  - family-names: Jin
+    given-names: Rongsen
   - family-names: Liu
     given-names: Zeyu
   - family-names: Zhou
@@ -16,7 +17,7 @@ authors:
   - family-names: Zhang
     given-names: Pei
     email: peizhang@tju.edu.cn
-version: 2.0.0
+version: 2.0.1
 date-released: 2026-10-24
 license: MIT
 preferred-citation:
@@ -27,7 +28,8 @@ preferred-citation:
       given-names: Jiawei
     - family-names: Hou
       given-names: Peng
-    - family-names: Jinrongsen
+    - family-names: Jin
+      given-names: Rongsen
     - family-names: Liu
       given-names: Zeyu
     - family-names: Zhou

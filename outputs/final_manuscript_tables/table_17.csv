@@ -1,0 +1,6 @@
+State,Operational definition,Days,Observations
+Extreme-high,Daily maximum at or above the pooled 85th percentile (930.340 CNY/MWh).,19,912
+Extreme-low,"Among remaining days, a negative daily minimum at or below the pooled 15th percentile (19.645 CNY/MWh).",15,720
+High-volatility,The 13 largest daily standard deviations among the remaining days.,13,624
+Typical-normal,All remaining delivery days.,79,"3,792"
+Total,Four-season evaluation registry,126,"6,048"

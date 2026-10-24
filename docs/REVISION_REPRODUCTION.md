@@ -21,6 +21,18 @@ figure assets for comparison with the submitted document.
 
 ## Numerical reference
 
+Use the v2.0.1 repository with the complete v2.0.0 data archive. The downloader
+reads the archive's own release tag, so both versions are selected explicitly.
+The authoritative final point and negative-price indices are the repository's
+`outputs/final_revision_audit/point_metric_traceability.csv` and
+`tail_metric_traceability.csv`. The P01 primary row reports MAE 59.55745867.
+Older r21 indices inside the archive describe earlier analyses and are retained
+as provenance. Final Table A.1 uses `outputs/final_revision_audit/paired_statistics.csv`
+with 20,000 resamples; the 10,000-resample historical diagnostic is a separate output.
+
+See [the output index](../OUTPUT_INDEX.md) for figure and table source mappings,
+including the final diagram source and point-comparison plotting commands.
+
 | Analysis | Authoritative archive |
 | --- | --- |
 | Primary full model and matched components | `r2_experiment_plan_20261018/joint_routing_trial_20261022/trial_predictions_LOCAL_ONLY.csv` |
@@ -45,10 +57,23 @@ reconstructs primary pathways from the saved estimators. Both require the full
 archive. No original author directory or drive mapping is required for these
 entry points.
 
+Replay writes regenerated predictions and its path-transformation audit under
+`--output`, which must be separate from the frozen archive. It retains source,
+protocol and fitted-artifact integrity checks. The historical guard that read
+the author's local Word documents is omitted because those documents are not
+forecasting inputs. The audited replay covers 13 configurations and all 20
+folds with zero numerical difference from the saved reference.
+
 `train-downstream` starts a fresh residual-selection run in the requested
 output directory. Historical classifier outputs and Chronos predictions are
 retained as inputs. Its settings and three chronological out-of-fold blocks
 are defined in `joint_routing_trial.py`.
+
+For supply and congestion classifier rebuilding, see
+[CLASSIFIER_REBUILD.md](CLASSIFIER_REBUILD.md). Its default preflight checks
+the 20-fold, three-holdout construction without fitting. An explicit fitting
+option is provided; it rebuilds the classifiers only. The complete forecasting
+pathway replay uses the released fitted artifacts.
 
 Foundation-model adaptation is implemented in
 `02_experiments/code/run_r10_chronos2_covariate_lora.py`; the corresponding

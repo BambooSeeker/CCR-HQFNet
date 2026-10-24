@@ -2,27 +2,31 @@
   "release_name": "CCR-HQFNet revision-2 reproducibility release",
   "release_date": "2026-10-24",
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
-  "manuscript": "Revised manuscript_R2_Comments1_4_clean.docx",
-  "response": "Point to point replies_R2_Comments1_4_20261023.docx",
-  "manuscript_sha256": "2a0745753daa8c67cfe705e6b1779f1d2e8f83fd404f7e50b1dc28489d90170e",
-  "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d",
+  "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
+  "response": "Point to point replies_R2_final_20261024.docx",
+  "manuscript_sha256": "a6d45b4161982e36a6529c51c83ed5f7fdc16f0a9b99035c244d0c26a3771f38",
+  "response_sha256": "eeaee5e50b4afd4f5d21e180cfd38ca7a27c7083a53ee74d42015253863ec210",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
     "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
-    "verification": "Primary fitted-model replay, probability recalculation and March downstream refit passed"
+    "verification": "Saved-prediction metrics, interval identities and fitted-model replay; see final verification reports."
   },
   "public_audit_outputs": [
     {
-      "path": "outputs/final_revision_audit/current_heldout_action_risk.csv",
-      "sha256": "1857b66afefdd0e977d65e4790c44ccb8c6efa8b0af754ed03b8ace424677fd5"
+      "path": "outputs/final_revision_audit/archived_action_risk_block_intervals.csv",
+      "sha256": "6c7701e85e42c67b9df06819db2a5513258b45265efc98797f82302203a70f41"
     },
     {
       "path": "outputs/final_revision_audit/archived_stress_action_risk.csv",
       "sha256": "7f5536aea6b1006a33acdbe94257ee49508396b031a37c7a502d90e0eb870de2"
     },
     {
-      "path": "outputs/final_revision_audit/archived_action_risk_block_intervals.csv",
-      "sha256": "6c7701e85e42c67b9df06819db2a5513258b45265efc98797f82302203a70f41"
+      "path": "outputs/final_revision_audit/B1_calibration_day_counts.csv",
+      "sha256": "59e287888cc7c113c638377c8a03da8d3efcbbfcc6e1ecd6391f81b3b5447a9c"
+    },
+    {
+      "path": "outputs/final_revision_audit/B1_calibration_fold_counts.csv",
+      "sha256": "fadf91b1344a314d0d9392274e350abc366284d2f253128d3e396e15ea9cc311"
     },
     {
       "path": "outputs/final_revision_audit/calibration_day_deletion.csv",
@@ -41,8 +45,28 @@
       "sha256": "d8572edbd008d7e2abcb92346d0b8617e2836ccbb225bb72f8c8cafc24e9bbfc"
     },
     {
+      "path": "outputs/final_revision_audit/controller_diagnostic_summary.json",
+      "sha256": "98d298387956d5c5839326f3c53a98a19e704f8c1f1c184a994febc7406cfda7"
+    },
+    {
       "path": "outputs/final_revision_audit/CQR_before_after_metrics.csv",
       "sha256": "6f1e02e5dc8b0dde51623f25ac21e3dd8c03025417612ea688ff176b251494af"
+    },
+    {
+      "path": "outputs/final_revision_audit/current_heldout_action_risk.csv",
+      "sha256": "1857b66afefdd0e977d65e4790c44ccb8c6efa8b0af754ed03b8ace424677fd5"
+    },
+    {
+      "path": "outputs/final_revision_audit/delivery_checks.json",
+      "sha256": "ca416d015768ddb47de6d1d69bacf9660ada7c3d5e13638b2a7d8c6ecc0f044d"
+    },
+    {
+      "path": "outputs/final_revision_audit/final_verification_summary.json",
+      "sha256": "9157a9c46667ad906c92fa59d9760c12b9f4066fa1e99608f40dae0eecbe527c"
+    },
+    {
+      "path": "outputs/final_revision_audit/march_version_comparison.csv",
+      "sha256": "90a81ca365675d2d07904db2c1cc371b195ffd94e7b12ebb5aaa45ffcc9e5ee9"
     },
     {
       "path": "outputs/final_revision_audit/matched_capacity_comparison.csv",
@@ -53,20 +77,24 @@
       "sha256": "b566863e0f95ea4d2d58b61046d90d5fad23f83c0df2669158408aad7a76b37b"
     },
     {
-      "path": "outputs/final_revision_audit/controller_diagnostic_summary.json",
-      "sha256": "98d298387956d5c5839326f3c53a98a19e704f8c1f1c184a994febc7406cfda7"
+      "path": "outputs/final_revision_audit/paired_statistics.csv",
+      "sha256": "5da72ad68ed9fda4c0d4ef531daeac3950014e9d6cb56356c5d948e98f7cf72f"
+    },
+    {
+      "path": "outputs/final_revision_audit/point_metric_traceability.csv",
+      "sha256": "2d681b1a01c4a419224aa97a7ca053681dac4f6ad0346a4c56add1ac8b94dec1"
     },
     {
       "path": "outputs/final_revision_audit/stress_source_scope.json",
       "sha256": "63c3968693f5bb6bc0a1a50de0b8910d959f90f5bb5830fc12021aeedb27856e"
     },
     {
-      "path": "outputs/final_revision_audit/delivery_checks.json",
-      "sha256": "ca416d015768ddb47de6d1d69bacf9660ada7c3d5e13638b2a7d8c6ecc0f044d"
+      "path": "outputs/final_revision_audit/tail_metric_traceability.csv",
+      "sha256": "3985c0e1419330d845891d0c112cc1ef2df17d9a0e5962b8b09779878993b7ec"
     }
   ],
   "reproduction_note": "Download the versioned research archive and follow docs/REVISION_REPRODUCTION.md. Source identifiers retain provenance; current primary predictions are identified explicitly.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0",
   "archive": {
     "name": "CCR-HQFNet-v2.0.0-research.zip",
@@ -134,6 +162,17 @@
         "bytes": 49713848,
         "sha256": "30c2501080bdd0aea3beb61814b32b7a00a32b9a7582937d7d95e190f845764e"
       }
-    ]
-  }
+    ],
+    "release_tag": "v2.0.0",
+    "note": "Unchanged full research inputs and fitted artifacts; use with the v2.0.1 portable entry points and final numerical indices."
+  },
+  "previous_submission": {
+    "manuscript": "Revised manuscript_R2_Comments1_4_clean.docx",
+    "response": "Point to point replies_R2_Comments1_4_20261023.docx",
+    "manuscript_sha256": "2a0745753daa8c67cfe705e6b1779f1d2e8f83fd404f7e50b1dc28489d90170e",
+    "response_sha256": "62911d48aa7a5727f6de78c06312be569584f182d835fa7e1045a4f54f305e7d"
+  },
+  "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
+  "marked_manuscript": "Revised manuscript_R2_final_marked_20261024.docx",
+  "marked_manuscript_sha256": "3976cbc0e754cc8d0f9be7341a41b96cd2f5ab064885c269104b2fdcfe56e9eb"
 }

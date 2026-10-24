@@ -1,0 +1,19 @@
+{
+  "rows": 78624,
+  "models": 13,
+  "targets_per_model": 6048,
+  "folds": 20,
+  "max_absolute_numeric_difference": 0.0,
+  "primary_targets": 6048,
+  "primary_days": 126,
+  "primary_models": 13,
+  "Full_MAE": 59.55745866961517,
+  "WIS": 35.393350552085074,
+  "MPIW90": 273.9046816725333,
+  "probability_recalculation": "PASS",
+  "quantile_point_identity": "PASS",
+  "archive_unchanged": true,
+  "model_training_performed": false,
+  "author_local_documents_required": false,
+  "version": "2.0.1"
+}

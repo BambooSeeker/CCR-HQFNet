@@ -1,0 +1,26 @@
+Market state,Model,"PICP 90
+(%)",MPIW,WIS
+Typical-normal,CCR-HQFNet,88.32,184.246,20.097
+Typical-normal,Fine-tuned Chronos-2,87.61,188.729,21.599
+Typical-normal,TFT-Quantile,85.57,165.065,25.193
+Typical-normal,LightGBM-Quantile,90.69,193.943,21.859
+Typical-normal,LightGBM-CQR,92.99,236.520,23.540
+Typical-normal,LEAR split conformal,89.29,213.116,26.002
+High-volatility,CCR-HQFNet,86.70,450.707,62.900
+High-volatility,Fine-tuned Chronos-2,85.42,450.800,66.252
+High-volatility,TFT-Quantile,73.72,287.148,73.464
+High-volatility,LightGBM-Quantile,77.40,351.482,71.943
+High-volatility,LightGBM-CQR,87.34,467.085,66.555
+High-volatility,LEAR split conformal,85.10,519.775,70.381
+Extreme-low,CCR-HQFNet,88.19,338.252,49.045
+Extreme-low,Fine-tuned Chronos-2,83.61,349.676,58.319
+Extreme-low,TFT-Quantile,68.61,155.334,53.817
+Extreme-low,LightGBM-Quantile,76.11,183.234,51.991
+Extreme-low,LightGBM-CQR,80.14,231.082,49.721
+Extreme-low,LEAR split conformal,83.47,324.169,58.983
+Extreme-high,CCR-HQFNet,88.05,474.927,69.394
+Extreme-high,Fine-tuned Chronos-2,89.91,477.509,69.833
+Extreme-high,TFT-Quantile,63.82,252.894,83.257
+Extreme-high,LightGBM-Quantile,67.21,306.536,85.385
+Extreme-high,LightGBM-CQR,75.99,424.900,78.726
+Extreme-high,LEAR split conformal,80.48,452.138,78.516

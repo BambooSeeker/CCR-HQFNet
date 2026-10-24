@@ -1,0 +1,37 @@
+Window,Prediction pathway,MAE,Negative MAE,MAE gain,95% interval
+Pooled,Complete model,82.930,206.197,0.000,Reference
+Pooled,Without congestion pathway,83.457,205.145,0.527,"[0.119, 0.990]"
+Pooled,Without supply-price pathway and acceptance,84.522,222.683,1.592,"[-0.171, 3.924]"
+Pooled,Without both pathways and acceptance,85.041,221.874,2.111,"[0.411, 4.314]"
+Pooled,Without selective acceptance,93.732,158.052,10.802,"[7.251, 16.567]"
+Pooled,Fine-tuned Chronos-2,87.078,230.678,4.148,"[1.958, 7.339]"
+W1,Complete model,105.314,509.565,0.000,Reference
+W1,Without congestion pathway,105.208,509.028,-0.107,"[-0.155, -0.035]"
+W1,Without supply-price pathway and acceptance,105.314,509.565,0.000,"[0.000, 0.000]"
+W1,Without both pathways and acceptance,105.208,509.028,-0.107,"[-0.155, -0.035]"
+W1,Without selective acceptance,105.313,508.455,-0.001,"[-0.003, -0.000]"
+W1,Fine-tuned Chronos-2,106.107,508.000,0.792,"[0.387, 1.124]"
+W2,Complete model,80.330,314.114,0.000,Reference
+W2,Without congestion pathway,79.484,314.093,-0.846,"[-1.426, -0.326]"
+W2,Without supply-price pathway and acceptance,79.331,298.461,-0.999,"[-1.591, 0.000]"
+W2,Without both pathways and acceptance,78.485,298.689,-1.845,"[-2.283, -0.440]"
+W2,Without selective acceptance,77.482,267.869,-2.848,"[-3.978, 0.658]"
+W2,Fine-tuned Chronos-2,86.012,301.674,5.681,"[2.230, 11.026]"
+W3,Complete model,43.601,244.131,0.000,Reference
+W3,Without congestion pathway,46.684,239.164,3.082,"[1.150, 5.208]"
+W3,Without supply-price pathway and acceptance,46.183,222.243,2.582,"[-2.632, 12.380]"
+W3,Without both pathways and acceptance,49.155,217.699,5.554,"[0.003, 15.043]"
+W3,Without selective acceptance,72.040,183.373,28.439,"[21.865, 39.947]"
+W3,Fine-tuned Chronos-2,45.691,229.539,2.090,"[-3.803, 13.398]"
+W4,Complete model,99.419,142.466,0.000,Reference
+W4,Without congestion pathway,99.367,142.558,-0.052,"[-0.206, 0.056]"
+W4,Without supply-price pathway and acceptance,108.834,186.410,9.415,"[4.068, 13.472]"
+W4,Without both pathways and acceptance,108.803,186.651,9.384,"[4.038, 13.414]"
+W4,Without selective acceptance,123.437,99.862,24.018,"[4.903, 45.699]"
+W4,Fine-tuned Chronos-2,109.003,184.260,9.584,"[4.040, 13.765]"
+W5,Complete model,85.985,236.631,0.000,Reference
+W5,Without congestion pathway,86.542,235.133,0.557,"[0.234, 0.874]"
+W5,Without supply-price pathway and acceptance,82.945,256.277,-3.039,"[-7.787, -0.467]"
+W5,Without both pathways and acceptance,83.555,255.212,-2.429,"[-6.778, -0.252]"
+W5,Without selective acceptance,90.386,175.940,4.402,"[0.160, 12.128]"
+W5,Fine-tuned Chronos-2,88.580,357.847,2.595,"[-4.237, 8.522]"
