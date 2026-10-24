@@ -118,6 +118,9 @@ earlier document identities. This patch aligns the non-congestion proxy
 notation, documents the five-quantile context-sensitivity score, corrects
 one descriptive-statistic rounding and supplies the updated rolling-protocol
 figure. The numerical v2.0.1 forecasts and experiment outputs remain fixed.
+The main-branch manifest records subsequent editorial refinements to the
+submission text, including the author-approved abstract opening; the tagged
+source and experimental reference remain unchanged.
 
 [Data availability](DATA_AVAILABILITY.md) defines the research release.
 [CITATION.cff](CITATION.cff) provides citation metadata.
