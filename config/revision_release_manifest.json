@@ -72,6 +72,68 @@
     "name": "CCR-HQFNet-v2.0.0-research.zip",
     "sha256": "645b9ad3f6bc20dff0bf48f514fb71495b0bea27bf2a65ffb646afdc19101822",
     "bytes": 1203147448,
-    "files": 1793
+    "files": 1793,
+    "parts": [
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.001",
+        "bytes": 104857600,
+        "sha256": "860e9399b924e4fa7ee660a8d01668cc9f6344593b6c97a84a7a10075e04054e"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.002",
+        "bytes": 104857600,
+        "sha256": "c2d63878409dc6f8a980576eaebcb8dd29958332c4d38e1aa2a5465abdc8de68"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.003",
+        "bytes": 104857600,
+        "sha256": "a866935b25d48632f25bf7cc92f006c189036cc05b880018942a3fd3640945e4"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.004",
+        "bytes": 104857600,
+        "sha256": "5b69e0a2437477e6db401037d4ad30b1171b8c671b3b02c3be6ac4b9db58ab81"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.005",
+        "bytes": 104857600,
+        "sha256": "b41ec0f3ec479683e42399b824d48de5ad7d5e27954bafd2fe024e4c1638c1cc"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.006",
+        "bytes": 104857600,
+        "sha256": "4a72deeb8c59a8350d184bd42700200db8d83526794c652b391c33170cae3450"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.007",
+        "bytes": 104857600,
+        "sha256": "1c2e9ef7d3e64012d938b6bbae352b6cdedf980bdf997b63208c7570f994afb4"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.008",
+        "bytes": 104857600,
+        "sha256": "41f062c94df9ded942173b8a281b68f5a607e36f27cb2e484c1fea94ab5c1d04"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.009",
+        "bytes": 104857600,
+        "sha256": "6e1db0c6371aa4ce41a8ef387cf6268be1d8959cc3fa5b3af47d081fd5ebd970"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.010",
+        "bytes": 104857600,
+        "sha256": "4aae4d494cf5bab4b2cdc9948392f49d16637305ab96ecda917d5c44128f1f73"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.011",
+        "bytes": 104857600,
+        "sha256": "7d16a711fa6d264faebfdf442c7d8b832a21cdf2378f784c03801b2a5b9c226b"
+      },
+      {
+        "name": "CCR-HQFNet-v2.0.0-research.zip.012",
+        "bytes": 49713848,
+        "sha256": "30c2501080bdd0aea3beb61814b32b7a00a32b9a7582937d7d95e190f845764e"
+      }
+    ]
   }
 }

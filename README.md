@@ -13,8 +13,11 @@ corrections.
 The [v2.0.0 release](https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.0)
 provides research inputs, chronological split definitions, fitted model
 artifacts, source code, configurations and prediction outputs for the revised
-analyses. Download `CCR-HQFNet-v2.0.0-research.zip` from the release and extract
-it to a short local path. The extracted directory is named `research_archive`.
+analyses. Run `python download_research_archive.py` from this repository to
+download, verify and assemble `CCR-HQFNet-v2.0.0-research.zip`. The release
+distributes the archive in numbered parts; the script checks each part and
+the assembled ZIP against the release manifest. Extract the ZIP to a short
+local path. The extracted directory is named `research_archive`.
 The release checksums identify the exact files supplied.
 
 The archive includes the 6,048-observation primary evaluation, matched component
