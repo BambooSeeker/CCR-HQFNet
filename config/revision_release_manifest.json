@@ -4,8 +4,8 @@
   "repository": "https://github.com/BambooSeeker/CCR-HQFNet",
   "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
   "response": "Point to point replies_R2_submission_20261024.docx",
-  "manuscript_sha256": "eaf8607feba4ad4f67235b939953b4e01f8576c51b217e80c5af641b4cbdf0b8",
-  "response_sha256": "19cd62e4b3eb79f9168d6f67ad12506b20580aa45a4395dd6d4d734cb7a443f0",
+  "manuscript_sha256": "4ee72600f81c6fd068e25e3774b8fad33f543d74ea4e2457b491bb91f73801c0",
+  "response_sha256": "814a35ccc1d88f627d3f92bb090f0bdc391143359334f7cd663752c97855ffa5",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
     "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
@@ -174,7 +174,7 @@
   },
   "authoritative_traceability": "outputs/final_revision_audit/{point_metric_traceability,tail_metric_traceability,paired_statistics}.csv",
   "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
-  "marked_manuscript_sha256": "0ae7ca00fb2ce0a487635377570e7a0b185eeef193cdd9a74e9c5019e362966e",
+  "marked_manuscript_sha256": "9091b7be5743d995cf8b27ce9c758acc5f668fa36f8b799ed52e54a17913c64d",
   "document_history": [
     {
       "manuscript": "Revised manuscript_R2_final_clean_20261024.docx",
@@ -295,9 +295,17 @@
       "marked_manuscript_sha256": "7852c6e9ad6e36427181066bc5a2f26c0c77fe36c9d07f0e2b81245c34fb90f8",
       "response": "Point to point replies_R2_submission_20261024.docx",
       "response_sha256": "54e26e460426a7fdf9e32063b982d5d86e7a00938035c2fe8449445745bc9f0a"
+    },
+    {
+      "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
+      "manuscript_sha256": "eaf8607feba4ad4f67235b939953b4e01f8576c51b217e80c5af641b4cbdf0b8",
+      "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
+      "marked_manuscript_sha256": "0ae7ca00fb2ce0a487635377570e7a0b185eeef193cdd9a74e9c5019e362966e",
+      "response": "Point to point replies_R2_submission_20261024.docx",
+      "response_sha256": "19cd62e4b3eb79f9168d6f67ad12506b20580aa45a4395dd6d4d734cb7a443f0"
     }
   ],
-  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words; abstract conclusion grounded in supported extreme-negative-price forecasting and risk-assessment relevance after reference-paper reading; 225 words; approved abstract conclusion uses provide a sound basis for and retains extreme-negative-price forecasting and risk-assessment relevance; 229 words; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged; 2026-10-25: Section 3.6 and Comment 3 clarify complementary supply-price and congestion information, state-dependent increments and rare-negative-price weighting; numerical results and abstract unchanged; 2026-10-25: specifies summer W3 congestion and winter W4 supply-price/acceptance contributions, 15.98% floor improvement against Chronos and 11.52% overall stress improvement against uncontrolled dual pathways; tables unchanged",
+  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words; abstract conclusion grounded in supported extreme-negative-price forecasting and risk-assessment relevance after reference-paper reading; 225 words; approved abstract conclusion uses provide a sound basis for and retains extreme-negative-price forecasting and risk-assessment relevance; 229 words; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged; 2026-10-25: Section 3.6 and Comment 3 clarify complementary supply-price and congestion information, state-dependent increments and rare-negative-price weighting; numerical results and abstract unchanged; 2026-10-25: specifies summer W3 congestion and winter W4 supply-price/acceptance contributions, 15.98% floor improvement against Chronos and 11.52% overall stress improvement against uncontrolled dual pathways; tables unchanged; 2026-10-25: rewrote Comment 3 as connected primary, low-price, sustained-stress, seasonal-component and controller evidence; aligned rare-episode/settlement-risk explanation in overall reply and Section 3.6; numerical results unchanged",
   "numerical_release_tag": "v2.0.1",
   "source_release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2",
   "current_figure_overrides": {
