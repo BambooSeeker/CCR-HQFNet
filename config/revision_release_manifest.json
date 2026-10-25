@@ -5,7 +5,7 @@
   "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
   "response": "Point to point replies_R2_submission_20261024.docx",
   "manuscript_sha256": "9581bc8a1899dd266e32f1e7bb5a265744ecc9d0c73bdd2ba8312d1693e7e2e3",
-  "response_sha256": "c0df47b92871050e8a18617ca094c39c80ffacf5bfafe94c523f59ea4f553592",
+  "response_sha256": "76e8355b86f54e094b4e7a6edd73d679e3edeef5563a0139ac474183deacdb82",
   "scope": {
     "research_inputs": "Processed study records and historical inputs used for fitting, validation and testing",
     "code_and_models": "Archived experiment sources, fitted artifacts and portable primary replay entry point",
@@ -271,9 +271,17 @@
       "marked_manuscript_sha256": "e92b111d359d6a4b43e22a464460e04a1f383021d6f588969793fe3364eb92fd",
       "response": "Point to point replies_R2_submission_20261024.docx",
       "response_sha256": "89f503e61954584794ffbfeb405e67038fd1848fd3d66d38c3233c09f81e80cf"
+    },
+    {
+      "manuscript": "Revised manuscript_R2_submission_clean_20261024_abstract_final.docx",
+      "manuscript_sha256": "9581bc8a1899dd266e32f1e7bb5a265744ecc9d0c73bdd2ba8312d1693e7e2e3",
+      "marked_manuscript": "Revised manuscript_R2_submission_marked_20261024_abstract_final.docx",
+      "marked_manuscript_sha256": "e92b111d359d6a4b43e22a464460e04a1f383021d6f588969793fe3364eb92fd",
+      "response": "Point to point replies_R2_submission_20261024.docx",
+      "response_sha256": "c0df47b92871050e8a18617ca094c39c80ffacf5bfafe94c523f59ea4f553592"
     }
   ],
-  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words; abstract conclusion grounded in supported extreme-negative-price forecasting and risk-assessment relevance after reference-paper reading; 225 words; approved abstract conclusion uses provide a sound basis for and retains extreme-negative-price forecasting and risk-assessment relevance; 229 words; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged",
+  "document_revision": "2026-10-24: checked submission; non-congestion proxy notation aligned with implementation, Table 3 autumn maximum rounded consistently, five-quantile pinball definition added to Table F.1, Fig. 6 rolling-protocol illustration replaced; experimental predictions and primary results unchanged; author-approved abstract opening added; abstract 240 words; abstract shortened to 222 words with the approved opening and all numerical evidence retained; abstract closing sentence emphasizes substantial overall and extreme-negative-price gains and risk-assessment relevance; 223 words; abstract omits the floor-subset count and closes with its contribution to forecasting research; 216 words; abstract conclusion connects substantial accuracy gains, forecasting contribution and electricity-price risk assessment; 225 words; abstract conclusion emphasizes methodological integration and value for extreme negative-price prediction and risk assessment; 227 words; abstract conclusion grounded in supported extreme-negative-price forecasting and risk-assessment relevance after reference-paper reading; 225 words; approved abstract conclusion uses provide a sound basis for and retains extreme-negative-price forecasting and risk-assessment relevance; 229 words; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged; 2026-10-25: Comment 3 response links carrier, ordinary residual and full-model overall and extreme-negative-price results to five-window stress and nested mechanism evidence, followed by complete research release; all experimental outputs and manuscript unchanged",
   "numerical_release_tag": "v2.0.1",
   "source_release_url": "https://github.com/BambooSeeker/CCR-HQFNet/releases/tag/v2.0.2",
   "current_figure_overrides": {
